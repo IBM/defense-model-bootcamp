@@ -1,0 +1,34 @@
+/**
+ * IBM Carbon Design System color tokens.
+ * https://carbondesignsystem.com/elements/color/tokens/
+ */
+
+:root {
+  --ifm-navbar-height: 80px;
+  /* IBM Blue 60 as primary */
+  --ifm-color-primary: #0f62fe;
+  --ifm-color-primary-dark: #0043ce;
+  --ifm-color-primary-darker: #002d9c;
+  --ifm-color-primary-darkest: #001d6c;
+  --ifm-color-primary-light: #4589ff;
+  --ifm-color-primary-lighter: #78a9ff;
+  --ifm-color-primary-lightest: #a6c8ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* In dark mode use Blue 40 so links remain visible on dark backgrounds */
+[data-theme='dark'] {
+  --ifm-color-primary: #78a9ff;
+  --ifm-color-primary-dark: #4589ff;
+  --ifm-color-primary-darker: #0f62fe;
+  --ifm-color-primary-darkest: #0043ce;
+  --ifm-color-primary-light: #a6c8ff;
+  --ifm-color-primary-lighter: #d0e2ff;
+  --ifm-color-primary-lightest: #edf5ff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar__logo {
+  height: 60px;
+}
