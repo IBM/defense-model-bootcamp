@@ -64,6 +64,12 @@ const config = {
             label: 'Labs',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'resourcesSidebar',
+            position: 'left',
+            label: 'Resources',
+          },
+          {
             href: 'https://github.com/IBM/gcm-bootcamp',
             label: 'GitHub',
             position: 'right',
@@ -87,6 +93,15 @@ const config = {
             ],
           },
           {
+            title: 'Resources',
+            items: [
+              {
+                label: 'Event Resources',
+                to: '/docs/resources',
+              },
+            ],
+          },
+          {
             title: 'IBM Resources',
             items: [
               {
@@ -105,10 +120,6 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/IBM/gcm-bootcamp',
-              },
-              {
-                label: 'Contributing',
-                to: '/docs/contributing',
               },
             ],
           },

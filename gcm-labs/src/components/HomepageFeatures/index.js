@@ -32,7 +32,7 @@ const LabList = [
 
 function LabCard({number, title, tools, description, to}) {
   return (
-    <div className={clsx('col col--4', styles.labCardCol)}>
+    <div className={clsx('col col--3', styles.labCardCol)}>
       <div className={styles.labCard}>
         <div className={styles.labNumber}>Lab {number}</div>
         <Heading as="h3" className={styles.labTitle}>{title}</Heading>
@@ -40,6 +40,24 @@ function LabCard({number, title, tools, description, to}) {
         <p className={styles.labDescription}>{description}</p>
         <Link className="button button--primary button--sm" to={to}>
           Start Lab →
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function ResourcesCard() {
+  return (
+    <div className={clsx('col col--3', styles.labCardCol)}>
+      <div className={styles.labCard}>
+        <div className={clsx(styles.labNumber, styles.resourcesBadge)}>Resources</div>
+        <Heading as="h3" className={styles.labTitle}>Event Resources</Heading>
+        <p className={styles.labTools}>Presentations · Videos · Downloads</p>
+        <p className={styles.labDescription}>
+          Browse event materials, product documentation, and additional learning content for the bootcamp.
+        </p>
+        <Link className="button button--secondary button--sm" to="/docs/resources/">
+          Explore →
         </Link>
       </div>
     </div>
@@ -54,6 +72,7 @@ export default function HomepageFeatures() {
           {LabList.map((props, idx) => (
             <LabCard key={idx} {...props} />
           ))}
+          <ResourcesCard />
         </div>
       </div>
     </section>
