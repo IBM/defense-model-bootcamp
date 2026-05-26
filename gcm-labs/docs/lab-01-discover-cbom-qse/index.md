@@ -24,7 +24,7 @@ By the end of this lab you will be able to:
 
 | Step | Description |
 |------|-------------|
-| [Step 1: Environment Setup](./01-environment-setup.md) | Connect to your QSE instance and verify access |
+| [Step 1: Environment Setup](./01-environment-setup.md) | Connect to your QSE instance |
 
 ---
 
