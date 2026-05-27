@@ -11,7 +11,11 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
-        'lab-01-discover-cbom-qse/index',
+        {
+          type: 'doc',
+          id: 'lab-01-discover-cbom-qse/index',
+          label: 'Overview',
+        },
         'lab-01-discover-cbom-qse/environment-setup',
       ],
     },
@@ -21,7 +25,11 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
-        'lab-02-analysis-policy-migration/index',
+        {
+          type: 'doc',
+          id: 'lab-02-analysis-policy-migration/index',
+          label: 'Overview',
+        },
         'lab-02-analysis-policy-migration/environment-setup',
       ],
     },
@@ -31,7 +39,11 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
-        'lab-03-adaptive-remediation-qsr/index',
+        {
+          type: 'doc',
+          id: 'lab-03-adaptive-remediation-qsr/index',
+          label: 'Overview',
+        },
         'lab-03-adaptive-remediation-qsr/environment-setup',
       ],
     },
