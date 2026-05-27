@@ -1,6 +1,6 @@
 # gcm-bootcamp
 
-Lab guides for GCM Bootcamp, built with [Docusaurus](https://docusaurus.io/) and published to GitHub Pages.
+Lab guides for GCM Bootcamp, built with [Docusaurus](https://docusaurus.io/) and published to [GitHub Pages](https://ibm.github.io/gcm-bootcamp).
 
 ## Updating the Docs
 
