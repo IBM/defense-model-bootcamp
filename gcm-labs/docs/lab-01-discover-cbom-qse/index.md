@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Lab Overview
+title: Discover and Inventory CBOM Overview
 ---
 
 # Lab 1: Discover and Inventory CBOM
