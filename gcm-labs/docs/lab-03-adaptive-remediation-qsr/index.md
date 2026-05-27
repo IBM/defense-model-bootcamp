@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
-title: Lab Overview
 ---
 
 # Lab 3: Adaptive Remediation
