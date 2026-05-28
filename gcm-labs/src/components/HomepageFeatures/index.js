@@ -56,7 +56,7 @@ function ResourcesCard() {
         <p className={styles.labDescription}>
           Browse event materials, product documentation, and additional learning content for the bootcamp.
         </p>
-        <Link className="button button--secondary button--sm" to="/docs/resources/">
+        <Link className="button button--outline button--primary button--sm" to="/docs/resources/">
           Explore →
         </Link>
       </div>
