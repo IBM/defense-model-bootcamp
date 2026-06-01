@@ -7,7 +7,7 @@ const sidebars = {
     'getting-started',
     {
       type: 'category',
-      label: 'Lab 1: Discover and Inventory CBOM',
+      label: 'Lab 1: QSE + IBM Bob',
       collapsible: true,
       collapsed: false,
       items: [
@@ -16,7 +16,10 @@ const sidebars = {
           id: 'lab-01-discover-cbom-qse/index',
           label: 'Overview',
         },
-        'lab-01-discover-cbom-qse/environment-setup',
+        'lab-01-discover-cbom-qse/discover',
+        'lab-01-discover-cbom-qse/assess-prioritize',
+        'lab-01-discover-cbom-qse/remediate',
+        'lab-01-discover-cbom-qse/summary',
       ],
     },
     {
