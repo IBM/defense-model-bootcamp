@@ -46,7 +46,8 @@ const config = {
     ({
       image: 'img/logo.svg',
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'light',
+        respectPrefersColorScheme: false,
       },
       navbar: {
         title: 'IBM Defense Model Lab Guides',

@@ -4,7 +4,9 @@
 const sidebars = {
   tutorialSidebar: [
     'intro',
-    'getting-started',
+    'what-is-defense-model',
+    'what-is-argus-ai',
+    'background',
     {
       type: 'category',
       label: 'Lab 1A: Introduction to IBM Defense Model with ARGUS AI',
@@ -15,6 +17,81 @@ const sidebars = {
           type: 'doc',
           id: 'lab-01a-intro-defense-model/index',
           label: 'Overview',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/lab-setup',
+          label: 'Lab Setup',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/step-01-upload-aar',
+          label: 'Step 1: Upload AAR',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/step-02-request-summary',
+          label: 'Step 2: Request Summary',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/step-03-review-summary',
+          label: 'Step 3: Review Summary',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/step-04-extract-entities',
+          label: 'Step 4: Extract Entities',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/step-05-examine-entities',
+          label: 'Step 5: Examine Entities',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/step-06-entity-enrichment',
+          label: 'Step 6: Entity Enrichment',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/step-06a-vetted-sources',
+          label: 'Vetted Information Sources',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/step-07-generate-schema',
+          label: 'Step 7: Generate Schema',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/step-08-download-json',
+          label: 'Step 8: Download JSON',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/step-09-review-json',
+          label: 'Step 9: Review JSON',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/data-standards',
+          label: 'Common Data Standards',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/key-benefits',
+          label: 'Key Benefits',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/completion',
+          label: 'Lab Completion',
+        },
+        {
+          type: 'doc',
+          id: 'lab-01a-intro-defense-model/technical-reference',
+          label: 'Technical Reference',
         },
       ],
     },

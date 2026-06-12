@@ -7,25 +7,34 @@ title: Lab Overview
 
 **Tools:** IBM Defense Model, ARGUS AI
 
-## Objectives
+## Overview
 
-- Understand the fundamentals of the IBM Defense Model
-- Learn to work with ARGUS AI capabilities
-- Explore key features and use cases
-- Set up your environment for working with the Defense Model
+### Lab Overview
 
-## Estimated Duration
+**Duration:** 30-45 minutes
+**Difficulty:** Beginner
+**Prerequisites:** Complete **[Getting Started](../getting-started.md)** before starting this lab.
 
-~45 minutes
+### Lab Steps Overview
 
-## Prerequisites
+This lab consists of 9 hands-on steps:
 
-Complete **[Getting Started](../getting-started.md)** before starting this lab.
+1. **[Upload the After Action Report](./step-01-upload-aar.md)** - Load the AAR document into ARGUS AI
+2. **[Request a Document Summary](./step-02-request-summary.md)** - Use natural language to query the document
+3. **[Review the Document Summary](./step-03-review-summary.md)** - Analyze the AI-generated summary
+4. **[Extract Entities](./step-04-extract-entities.md)** - Identify equipment, locations, and personnel
+5. **[Examine the Entity Table](./step-05-examine-entities.md)** - Review structured entity data
+6. **[Review Entity Enrichment](./step-06-entity-enrichment.md)** - Understand Janes data integration
+7. **[Generate Structured Schema](./step-07-generate-schema.md)** - Convert to standardized JSON format
+8. **[Download JSON Output](./step-08-download-json.md)** - Access the structured data file
+9. **[Review JSON Structure](./step-09-review-json.md)** - Examine the schema organization
 
-## Lab Steps
+### What You'll Learn
 
-This lab content is currently under development. Please check back soon for detailed instructions.
+Through these steps, you'll experience:
 
----
-
-Next: **[Lab 1B: Unstructured Data Processing →](../lab-01b-unstructured-data/)**
+- **AI-powered document analysis** that accelerates intelligence production
+- **Entity enrichment** with authoritative sources like Janes
+- **Structured data outputs** that enable interoperability with DoD systems
+- **Common data standards** essential for joint and coalition operations
+- **The IBM Defense Model** combining cutting-edge AI with domain expertise

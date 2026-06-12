@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 5
 title: Getting Started
 ---
 
@@ -9,9 +9,9 @@ Complete these steps before beginning the labs.
 
 ## Prerequisites
 
-- A modern web browser (Chrome or Firefox recommended)
+- A modern web browser (Chrome, Firefox, or Edge recommended)
 - Access credentials provided by your lab instructor
-- (Optional) A terminal with `curl` and `git` installed for advanced exercises
+- The sample AAR document: `AAR_AngelFireUnclass.docx` (provided in lab materials)
 
 ## Lab Environment Access
 
@@ -19,7 +19,6 @@ Your lab instructor will provide:
 
 - **Lab URL** — the base URL for your dedicated lab environment
 - **Username / Password** — your individual credentials
-- **Environment ID** — used to identify your tenant across lab exercises
 
 :::info
 
@@ -32,7 +31,3 @@ If you have not received access credentials, contact your lab instructor before 
 1. Navigate to the lab environment URL provided by your instructor.
 2. Log in with your credentials.
 3. Confirm you can see the dashboard — you are ready to begin.
-
-## Next Steps
-
-Proceed to **[Lab 1A: Introduction to IBM Defense Model with ARGUS AI →](./lab-01a-intro-defense-model/)**
