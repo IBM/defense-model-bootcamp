@@ -24,21 +24,21 @@ jobs:
         with:
           node-version: '20'
           cache: npm
-          cache-dependency-path: gcm-labs/package-lock.json
+          cache-dependency-path: defense-model-labs/package-lock.json
 
       - name: Install dependencies
-        working-directory: gcm-labs
+        working-directory: defense-model-labs
         run: npm ci
 
       - name: Build site
-        working-directory: gcm-labs
+        working-directory: defense-model-labs
         run: npm run build
 
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: gcm-labs/build
+          path: defense-model-labs/build
 
   deploy:
     needs: build
