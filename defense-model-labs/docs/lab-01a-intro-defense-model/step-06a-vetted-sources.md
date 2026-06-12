@@ -5,9 +5,13 @@ title: Vetted Information Sources
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-# Why Vetted Information Sources Matter
+# Vetted Information Sources
 
-<img src={useBaseUrl('/img/lab-01/military-radiolocating-machine.jpg')} alt="Military Technology" width="300" />
+![Janes Intelligence](/img/lab-01/janes.png)
+
+## Janes Intelligence
+
+**Janes** is a globally recognized authority on defense intelligence, providing comprehensive data on military equipment, vehicles, aircraft, ships, and weapons systems. Integration with Janes ensures that AI-extracted information is validated against trusted sources.
 
 ## The Challenge of Open-Source Intelligence
 
