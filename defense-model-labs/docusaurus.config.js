@@ -11,10 +11,10 @@ const config = {
     v4: true,
   },
 
-  url: 'https://IBM.github.io',
-  baseUrl: '/defense-model-bootcamp/',
+  url: 'https://pages.github.ibm.com',
+  baseUrl: '/dallas-gsc-gov/defense-model-bootcamp/',
 
-  organizationName: 'IBM',
+  organizationName: 'dallas-gsc-gov',
   projectName: 'defense-model-bootcamp',
 
   onBrokenLinks: 'throw',
@@ -31,7 +31,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/IBM/defense-model-bootcamp/edit/main/defense-model-labs/',
+          editUrl: 'https://github.ibm.com/dallas-gsc-gov/defense-model-bootcamp/edit/main/defense-model-labs/',
         },
         blog: false,
         theme: {
@@ -71,7 +71,7 @@ const config = {
             label: 'Resources',
           },
           {
-            href: 'https://github.com/IBM/defense-model-bootcamp',
+            href: 'https://github.ibm.com/dallas-gsc-gov/defense-model-bootcamp',
             label: 'GitHub',
             position: 'right',
           },
@@ -116,7 +116,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/IBM/defense-model-bootcamp',
+                href: 'https://github.ibm.com/dallas-gsc-gov/defense-model-bootcamp',
               },
             ],
           },
