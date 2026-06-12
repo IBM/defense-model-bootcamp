@@ -1,6 +1,7 @@
-# gcm-bootcamp
+# defense-model-bootcamp
 
-Lab guides for GCM Bootcamp, built with [Docusaurus](https://docusaurus.io/) and published to [GitHub Pages](https://ibm.github.io/gcm-bootcamp).
+Lab guides for IBM Defense Model Bootcamp, built with [Docusaurus](https://docusaurus.io/) and published to [GitHub Pages](https://ibm.github.io/defense-model-bootcamp).
+This is a clone of [https://ibm.github.io/defense-model-bootcamp](https://ibm.github.io/defense-model-bootcamp).
 
 ## Updating the Docs
 
@@ -23,6 +24,6 @@ git commit -m "brief description of your change"
 git push origin main
 ```
 
-GitHub Actions builds and deploys to GitHub Pages automatically. Check the [Actions tab](https://github.com/IBM/gcm-bootcamp/actions) to confirm status.
+GitHub Actions builds and deploys to GitHub Pages automatically. Check the [Actions tab](https://github.com/IBM/defense-model-bootcamp/actions) to confirm status.
 
 For full contribution guidelines (local setup, adding labs, file naming conventions), see [CONTRIBUTING.md](./CONTRIBUTING.md).

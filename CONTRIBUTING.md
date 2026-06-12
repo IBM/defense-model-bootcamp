@@ -1,10 +1,10 @@
-# Contributing to GCM Lab Guides
+# Contributing to IBM Defense Model Lab Guides
 
-Thanks for contributing to the GCM Lab Guides. This guide covers everything you need to add or update content.
+Thanks for contributing to the IBM Defense Model Lab Guides. This guide covers everything you need to add or update content.
 
 ## Access
 
-Contributors must have **write access** to the [IBM/gcm-bootcamp](https://github.com/IBM/gcm-bootcamp) repository. Contact the repo maintainer to request access.
+Contributors must have **write access** to the [IBM/defense-model-bootcamp](https://github.com/IBM/defense-model-bootcamp) repository. Contact the repo maintainer to request access.
 
 ## Local Setup
 
@@ -16,8 +16,8 @@ Contributors must have **write access** to the [IBM/gcm-bootcamp](https://github
 ### Clone and Install
 
 ```bash
-git clone https://github.com/IBM/gcm-bootcamp.git
-cd gcm-bootcamp/gcm-labs
+git clone https://github.com/IBM/defense-model-bootcamp.git
+cd defense-model-bootcamp/defense-model-labs
 npm install
 ```
 
@@ -27,7 +27,7 @@ npm install
 npm start
 ```
 
-The site is served at `http://localhost:3000/gcm-bootcamp/`. Changes to Markdown files hot-reload automatically.
+The site is served at `http://localhost:3000/defense-model-bootcamp/`. Changes to Markdown files hot-reload automatically.
 
 ## Updating the Docs
 
@@ -61,7 +61,7 @@ git commit -m "brief description of your change"
 git push origin main
 ```
 
-GitHub Actions will build the site and deploy to GitHub Pages automatically. Check the [Actions tab](https://github.com/IBM/gcm-bootcamp/actions) to confirm deployment status.
+GitHub Actions will build the site and deploy to GitHub Pages automatically. Check the [Actions tab](https://github.com/IBM/defense-model-bootcamp/actions) to confirm deployment status.
 
 > If the build fails (e.g. a broken link), the live site is **not** updated.
 
