@@ -11,9 +11,9 @@ title: Lab Overview
 
 ### Lab Overview
 
-**Duration:** 30-45 minutes
-**Difficulty:** Beginner
-**Prerequisites:** Complete **[Getting Started](../getting-started.md)** before starting this lab.
+- **Duration:** 30-45 minutes
+- **Difficulty:** Beginner
+- **Prerequisites:** None
 
 ### Lab Steps Overview
 

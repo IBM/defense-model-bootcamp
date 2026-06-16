@@ -10,16 +10,7 @@ title: Step 3 - Review Summary
 ## Instructions
 
 1. Read through the summary provided by ARGUS AI
-2. Note the key information categories presented:
-   - Operation overview
-   - Mission objectives
-   - Equipment and assets
-   - Personnel and units
-   - Outcomes and observations
-3. Consider how this summary could be useful for:
-   - Quick briefings to leadership
-   - Historical record searches
-   - Comparative analysis with other operations
+![Review summary](/img/lab-01/review-summary.png)
 
 ## Discussion Points
 

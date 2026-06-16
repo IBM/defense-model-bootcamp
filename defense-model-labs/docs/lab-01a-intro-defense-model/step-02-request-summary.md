@@ -13,17 +13,13 @@ title: Step 2 - Request Summary
    ```
    What is this document about?
    ```
-2. Press Enter or click the Send button
+   ![What is this document about](/img/lab-01/what-is-this-document-about.png)
+2. Press the submit button
 3. Wait for ARGUS AI to generate a response
 
 ## Expected Result
 
-ARGUS AI will provide a comprehensive summary of the AAR, including:
-- The operation name and date
-- Primary mission objectives
-- Key participants and units involved
-- Major events and outcomes
-- Overall mission success assessment
+ARGUS AI will provide a summary of the AAR.
 
 ## What to Look For
 

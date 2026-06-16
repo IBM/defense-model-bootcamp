@@ -9,10 +9,11 @@ title: Step 1 - Upload AAR
 
 ## Instructions
 
-1. Locate the document upload area in the ARGUS AI interface (typically a button labeled "Upload Document" or a drag-and-drop zone)
-2. Click the upload button or drag the `AAR_AngelFireUnclass.docx` file into the designated area
-3. Wait for the upload confirmation message
-4. You should see an indicator that the document has been successfully loaded
+1. Locate the document upload area in the ARGUS AI interface and click the [+] button to open the file dialog
+![Upload AAR](/img/lab-01/upload-aar.png)
+2. Upload your downloaded [`AAR_OperationGhostFalcon.docx`](/AAR_OperationGhostFalcon.docx) file
+![Uploaded AAR](/img/lab-01/uploaded-aar.png)
+3. Wait for the upload to complete and the document name to appear
 
 ## Expected Result
 

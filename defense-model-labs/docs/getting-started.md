@@ -11,7 +11,7 @@ Complete these steps before beginning the labs.
 
 - A modern web browser (Chrome, Firefox, or Edge recommended)
 - Access credentials provided by your lab instructor
-- The sample AAR document: `AAR_AngelFireUnclass.docx` (provided in lab materials)
+- The sample AAR document: [`AAR_OperationGhostFalcon.docx`](/AAR_OperationGhostFalcon.docx) (provided in lab materials)
 
 ## Lab Environment Access
 
