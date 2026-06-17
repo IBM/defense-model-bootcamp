@@ -5,6 +5,7 @@ title: What is the IBM Defense Model?
 
 # What is the IBM Defense Model?
 
+![High-Level Introduction to IBM Defense Model.png](/img/lab-01/High-Level-Introduction-to-IBM-Defense-Model.png)
 
 
 The **IBM Defense Model**, built on the security and trust of IBM's open family of foundation models - Granite, combines IBM's advance AI capabilities with Janes trusted defense intelligence, to deliver a solution that enhances decision-making across the defense and federal ecosystems. This joint approach ensures that insights are not only fast, but also verified, validated, unbiased, and relevant to mission-critical needs.

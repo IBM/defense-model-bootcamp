@@ -56,7 +56,7 @@ const sidebars = {
         {
           type: 'doc',
           id: 'lab-01a-intro-defense-model/step-06a-vetted-sources',
-          label: 'Vetted Information Sources',
+          label: '🔍 Vetted Information Sources',
         },
         {
           type: 'doc',
@@ -76,12 +76,12 @@ const sidebars = {
         {
           type: 'doc',
           id: 'lab-01a-intro-defense-model/data-standards',
-          label: 'Common Data Standards',
+          label: '🔍 Common Data Standards',
         },
         {
           type: 'doc',
           id: 'lab-01a-intro-defense-model/key-benefits',
-          label: 'Key Benefits',
+          label: '🔍 Key Benefits',
         },
         {
           type: 'doc',

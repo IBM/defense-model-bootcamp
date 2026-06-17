@@ -13,8 +13,11 @@ title: Step 7 - Generate Schema
    ```
    put this information into a schema
    ```
+
 2. Send the message and wait for ARGUS AI to process the request
+
 3. Observe the schema generation process
+![Put into schema](/img/lab-01/put-into-schema.png)
 
 ## Expected Result
 
@@ -30,4 +33,8 @@ ARGUS AI will generate a structured JSON output that organizes all extracted inf
 
 ## 💡 Tip
 
+
+<div style={{backgroundColor: '#fffbcc', padding: '15px', borderLeft: '4px solid #f0c000', borderRadius: '4px', margin: '10px 0'}}>
+<strong>💡 Key Insight:</strong> 
 Schema-based outputs enable automated processing, database integration, and interoperability with other defense systems.
+</div>

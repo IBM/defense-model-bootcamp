@@ -3,16 +3,19 @@ sidebar_position: 9
 title: Step 8 - Download JSON
 ---
 
-# Step 8: Download and Examine the JSON Output
+# Step 8: Download the JSON Output
 
 **Objective:** Access the structured data file for further use.
 
 ## Instructions
 
-1. Locate the download button or link provided by ARGUS AI (typically labeled "Download JSON" or similar)
-2. Click to download the file to your computer
-3. Save the file with a recognizable name (e.g., `AAR_AngelFire_Structured.json`)
-4. Verify the download completed successfully
+1. Locate the **"Download" button** provided by ARGUS AI
+![Output ready](/img/lab-01/output-ready.png)
+
+2. Click to download the file to your computer -- the file will download automatically
+
+3. Open the downloaded file
+
 
 ## Expected Result
 

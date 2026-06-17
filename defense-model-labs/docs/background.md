@@ -3,11 +3,13 @@ sidebar_position: 4
 title: Background
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Background
 
 ## What is an After Action Report (AAR)?
 
-![After Action Review](/img/lab-01/After_Action_Review_during_CSTX_86-17-03.jpg)
+<img src={useBaseUrl('/img/lab-01/After_Action_Review_during_CSTX_86-17-03.jpg')} alt="After Action Review" width="600" />
 
 An **After Action Report (AAR)** is a structured document used by military organizations to:
 

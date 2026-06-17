@@ -9,23 +9,30 @@ title: Step 6 - Entity Enrichment
 
 ## Instructions
 
-1. Observe the "Entity Enrichment" section displayed by ARGUS AI
-2. For each equipment entity, review the enrichment data:
-   - **Janes Match Status:** Whether the equipment was found in Janes databases
-   - **Equipment Specifications:** Technical details, dimensions, performance characteristics
-   - **Operational Information:** Countries of operation, units using the equipment
-   - **Related Systems:** Associated weapons, sensors, or platforms
-   - **Manufacturer Details:** Origin country and production information
-3. Compare the original AAR mentions with the enriched Janes data
+1. Click **"Chain of Thought"** at the end of the response
+
+2. Note the **"Entity Extraction"** section displayed
+![Entities enrichment and extraction](/img/lab-01/entities-enrichment-extraction.png)
+
+3. Note the **"Entity Enrichment"** section
+
+4. Click on a **entity with a match** to view how the Janes data lookup happened
+![Entity expanded](/img/lab-01/entity-expanded.png)
+
+5. Note the entire step history for the original prompt
+![Step History](/img/lab-01/step-history.png)
+
+## Discussion Points
+
+- How does enrichment with authoritative sources like Janes improve the reliability of intelligence analysis?
+- What are the potential risks of relying solely on AI-extracted entities without enrichment?
+- How might enriched entity data support cross-referencing with other intelligence sources?
+- What operational decisions could be better informed by having detailed equipment specifications?
+- How does standardized naming (NATO reporting names, official designations) facilitate information sharing across allied forces?
 
 ## Expected Result
 
-You will see detailed intelligence profiles for identified equipment, including:
-- Official designations and NATO reporting names
-- Technical specifications (speed, range, payload, etc.)
-- Operational history and current users
-- Related equipment and systems
-- Manufacturer and production details
+The Chain of Thought view shows the step-by-step process of entity extraction and enrichment, demonstrating how ARGUS AI queries Janes databases to enhance the extracted entities with authoritative intelligence.
 
 ## Why This Matters
 
@@ -43,4 +50,4 @@ Entity enrichment with Janes data provides several critical benefits:
 
 ---
 
-**Next Step:** [Generate Structured Schema](./step-07-generate-schema.md)
+**Next Step:** [Vetted Information Sources](./step-06a-vetted-sources.md)

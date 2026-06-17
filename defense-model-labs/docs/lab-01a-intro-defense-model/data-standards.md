@@ -23,6 +23,8 @@ Without common data standards, information sharing becomes:
 
 The Department of Defense has established several data standards to enable interoperability:
 
+![UDRA](/img/lab-01/udra.png)
+
 ### 1. US Army UDRA (Universal Data Reference Architecture)
 - Provides common data models for Army systems
 - Enables data sharing across Army applications
