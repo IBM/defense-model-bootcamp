@@ -28,6 +28,7 @@ It combines:
 - **IBM Granite foundation models** as the AI foundation
 - **IBM watsonx.ai** as the enterprise AI platform for development, deployment, and orchestration
 - **Janes defense intelligence** to support domain-specific context, retrieval, and analysis
+   - Learn more about Janes at **[https://www.janes.com →](https://www.janes.com)**
 
 :::tip
 

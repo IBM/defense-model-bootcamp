@@ -65,11 +65,16 @@ This tab supports ARGUS AI's broader mission by:
 
 The **Model Governance** view has deployment details, test results, model health metrics, and evaluation panels for monitoring AI quality and performance.
 
+**Integrated Products:**
+- **[watsonx.governance](https://www.ibm.com/products/watsonx-governance)**: Provides AI governance capabilities including model lifecycle management and compliance tracking
+- **[OpenScale](https://www.ibm.com/docs/en/software-hub/5.4.x?topic=services-watson-openscale)**: Monitors AI models for fairness, explainability, and drift detection, functioning like an AI factsheet
+
 This tab supports ARGUS AI's broader mission by:
 - Providing visibility into AI model health and evaluation status
 - Tracking quality metrics and identifying potential issues
 - Supporting responsible AI use through continuous monitoring
 - Ensuring AI workflows remain trustworthy and compliant
+- Leveraging watsonx.governance for comprehensive AI lifecycle governance
 
 ![ARGUS AI Governance Tab](/img/argus-ai/ArgusAI_Governance.png)
 
@@ -93,11 +98,15 @@ This tab supports ARGUS AI's broader mission by:
 
 The **Observability** dashboard has monitoring panels for website analytics, AI model performance, and infrastructure resources.
 
+**Integrated Product:**
+- **[Instana](https://www.ibm.com/products/instana)**: Provides comprehensive application performance monitoring (APM) and infrastructure observability, tracking website analytics, application health, and system resources in real-time
+
 This tab supports ARGUS AI's broader mission by:
 - Providing real-time visibility into application and AI performance
 - Enabling rapid identification of performance issues or errors
 - Tracking AI-specific metrics like token usage and model latency
 - Supporting operational reliability through comprehensive system monitoring
+- Leveraging Instana's APM capabilities for deep application and infrastructure insights
 ![ARGUS AI Observability Tab](/img/argus-ai/ArgusAI_Observability.png)
 
 ---
@@ -106,15 +115,15 @@ This tab supports ARGUS AI's broader mission by:
 
 The **Map** view displays a geospatial intelligence interface with satellite imagery showing military installations, units, and real-time intelligence data overlaid on an interactive global map. The map integrates multiple intelligence data sources including:
 
-- Military Installations (Janes)
+- Military Installations ([Janes](https://www.janes.com/))
 - Runway Directions
 - Range Rings
 - Live Aircraft
 - AIS Ship Tracking
 - Weather
 - Events
-- RAIC Imagery Coverage
-- RAIC Detections
+- [RAIC](https://raiclabs.com/) Imagery Coverage
+- [RAIC](https://raiclabs.com/) Detections
 
 This tab supports ARGUS AI's broader mission by:
 - Visualizing extracted entities and intelligence data in their geographic context
