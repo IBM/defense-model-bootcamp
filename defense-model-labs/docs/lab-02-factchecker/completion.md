@@ -149,4 +149,4 @@ We value your feedback! Please share your experience with this lab:
 
 **Thank you for completing Lab 2: Defense Intelligence Information Checker!**
 
-Ready for more? Continue to [Lab 3: Fine Tuning](../lab-03-fine-tuning/index.md) or return to the [Home Page](../../intro.mdx).
+Ready for more? Continue to [Lab 3: Fine Tuning](../lab-03-fine-tuning/index.md) or return to the [Home Page](/intro).
