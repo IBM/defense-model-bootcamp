@@ -9,6 +9,8 @@ title: Lab Overview
 
 ## Overview
 
+**Disclaimer:** The IBM Defense Model extracts related entities such as military equipment, inventory, installations, and orders of battle from user claims, statements, or documents to verify information against its trained data and the authoritative Janes database. This lab exercise is intended to demonstrate that the model's results are traceable to their underlying sources and are not intended to establish or guarantee the accuracy of the information presented.
+
 ### Lab Overview
 
 - **Duration:** 30-45 minutes
