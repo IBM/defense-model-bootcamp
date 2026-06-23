@@ -4,10 +4,11 @@ title: Prompt Management
 ---
 
 # Prompt Management
+**(Optional Step for the Lab Exercise)**
 
 ## Understanding System Prompts
 
-Every AI model receives a hidden set of written instructions before it sees your question — called a **system prompt**, which tells it how to behave, what role to play, and how to format its answers. Prompt Management lets you view and optionally edit those instructions for each model in this tool.
+AI model receives a set of foundational instructions before it interacts with your questions — called a system prompt, which tells it how to behave, what role to play, and how to format its answers. Prompt Management feature in the tool lets you view and optionally edit those instructions.
 
 For the IBM Defense Model, Steps 1 and 2 are locked to protect the Jane's retrieval pipeline; only Step 3, which controls how retrieved data is turned into a verdict, can be modified. For the purposes of this demo, the defaults are already configured, and nothing needs to be changed.
 
