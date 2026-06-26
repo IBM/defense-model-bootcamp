@@ -1,31 +1,44 @@
 ---
 sidebar_position: 1
-title: Lab Overview
+title: Lab 1B Overview
 ---
 
-# Lab 1B: Unstructured Data Processing
+# Lab 1B: Unstructured Data Processing with IBM Defense Model
 
-**Tools:** IBM Defense Model
+This lab introduces you to IBM's Unstructured Data Processing capabilities, including Unstructured Data Curation (UDC) and Unstructured Data Integration (UDI) within IBM watsonx.data.
 
-## Objectives
+## 📚 Lab Contents
 
-- Learn techniques for processing unstructured data
-- Understand data preparation and preprocessing methods
-- Apply the IBM Defense Model to unstructured data sources
-- Extract insights from various data formats
+This comprehensive lab includes:
 
-## Estimated Duration
+- **[Overview](./overview)** - Lab objectives and learning outcomes
+- **[Introduction](./introduction)** - Why automate unstructured data ingestion
+- **[Lab Setup](./setup)** - Environment configuration and access
+- **[Step 1: Upload Document](./step1)** - Document upload and processing
+- **[Step 2: Query Documents](./step2)** - Master document querying techniques
+- **[Step 3: Extract Insights](./step3)** - Advanced insight extraction
+- **[Completion](./completion)** - Lab summary and next steps
 
-~60 minutes
+## 🎯 What You'll Learn
 
-## Prerequisites
+- Configure connections to various data sources (Box, Presto, Milvus)
+- Build operator-driven pipelines for document ingestion
+- Analyze document metadata and classify documents
+- Use natural language to query document collections
+- Extract entities, timelines, and insights from unstructured data
+
+## ⏱️ Duration
+
+30-45 minutes
+
+## 📋 Prerequisites
 
 Complete **[Lab 1A: Introduction to IBM Defense Model with ARGUS AI](../lab-01a-intro-defense-model/)** before starting this lab.
 
-## Lab Steps
+---
 
-This lab content is currently under development. Please check back soon for detailed instructions.
+**Ready to begin?** Click on **[Overview](./overview)** to start the lab!
 
 ---
 
-Next: **[Lab 2: IBM Defense Model Factchecker →](../lab-02-factchecker/)**
+Next Lab: **[Lab 2: IBM Defense Model Factchecker →](../lab-02-factchecker/)**

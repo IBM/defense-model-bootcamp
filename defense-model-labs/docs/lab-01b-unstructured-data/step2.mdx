@@ -1,0 +1,271 @@
+---
+id: step2
+title: Step 2 - Master Document Querying
+sidebar_label: Step 2 - Query Documents
+sidebar_position: 5
+---
+
+import InteractiveActivity from '@site/src/components/InteractiveActivity';
+import QueryBuilder from '@site/src/components/QueryBuilder';
+
+
+## 🔍 Hands-On: Advanced Document Analysis
+
+Now that your document is loaded, it's time to unlock its insights! In this step, you'll learn how to effectively query documents using natural language and extract meaningful information.
+
+### The Art of Asking Questions
+
+AI document analysis is powerful, but the quality of your results depends on how you ask questions. You'll learn:
+
+- **Broad vs. Specific Queries**: When to ask general questions vs. targeted ones
+- **Context Building**: How to ask follow-up questions that build on previous answers
+- **Information Extraction**: Techniques for pulling out specific data points
+- **Verification**: How to cross-reference information within documents
+
+---
+
+## 🎯 Activity 1: Start with Overview Questions
+
+<InteractiveActivity
+  title="Understand the Document's Big Picture"
+  description="Begin by asking broad questions to understand the overall content and context."
+  tasks={[
+    {
+      title: "Ask: 'What is this document about?'",
+      description: "Type this question in the ARGUS AI chat and observe the response. The AI should provide a high-level summary of the document's purpose and content.",
+      hint: "Notice how the AI identifies this as an After Action Review and explains its purpose in military operations."
+    },
+    {
+      title: "Ask: 'Can you provide a brief summary?'",
+      description: "Request a summary to get the key points condensed. This helps you understand the document structure quickly.",
+      hint: "The AI will extract the most important information and present it concisely - much faster than reading the entire document!"
+    },
+    {
+      title: "Ask: 'What is the time period covered?'",
+      description: "Query for temporal information. This helps establish the context and relevance of the document.",
+      hint: "Look for specific dates or date ranges in the response. This is metadata the AI extracted automatically."
+    },
+    {
+      title: "Compare Response Quality",
+      description: "Review all three responses. Notice how each answer provides different levels of detail based on your question's specificity.",
+      hint: "This demonstrates how question framing affects AI responses - a key skill for effective document analysis!"
+    }
+  ]}
+/>
+
+---
+
+## 🎮 Interactive Query Builder
+
+Now it's your turn to experiment! Use the interactive query builder below to try different types of questions. Click on suggested queries or write your own.
+
+<QueryBuilder />
+
+---
+
+## 🎯 Activity 2: Extract Specific Information
+
+<InteractiveActivity
+  title="Dig Deeper into Document Details"
+  description="Now that you understand the overview, let's extract specific information."
+  tasks={[
+    {
+      title: "Identify Key Personnel",
+      description: "Ask: 'Who are the key people or units mentioned in this document?' This tests the AI's entity recognition capabilities.",
+      hint: "The AI should identify names, ranks, and unit designations. This is crucial for intelligence analysis!"
+    },
+    {
+      title: "Find Locations",
+      description: "Ask: 'What locations or geographic areas are referenced?' This extracts spatial information from the text.",
+      hint: "Notice how the AI can distinguish between different types of locations (bases, operational areas, etc.)"
+    },
+    {
+      title: "Extract Key Findings",
+      description: "Ask: 'What are the main findings or conclusions?' This tests the AI's ability to identify important insights.",
+      hint: "The AI analyzes the document structure to find conclusion sections and key takeaways."
+    },
+    {
+      title: "Identify Action Items",
+      description: "Ask: 'What recommendations or action items are provided?' This is critical for operational planning.",
+      hint: "AARs typically include lessons learned and recommendations - the AI should extract these systematically."
+    }
+  ]}
+/>
+
+---
+
+## 🎯 Activity 3: Practice Follow-Up Questions
+
+<InteractiveActivity
+  title="Build Context with Sequential Queries"
+  description="Learn how to ask follow-up questions that build on previous answers."
+  tasks={[
+    {
+      title: "Start with a Broad Question",
+      description: "Ask: 'What challenges were encountered during this operation?' Get the AI to identify problems or issues.",
+      hint: "The AI will scan for negative indicators, problems, or challenges mentioned in the document."
+    },
+    {
+      title: "Drill Down on Specifics",
+      description: "Based on the previous answer, ask: 'Can you provide more details about [specific challenge]?' Replace [specific challenge] with something from the first response.",
+      hint: "This demonstrates contextual understanding - the AI remembers the conversation and provides deeper detail."
+    },
+    {
+      title: "Cross-Reference Information",
+      description: "Ask: 'How did these challenges affect the mission outcome?' This tests the AI's ability to connect different parts of the document.",
+      hint: "The AI should link cause and effect, showing relationships between different sections of the document."
+    },
+    {
+      title: "Synthesize Insights",
+      description: "Ask: 'Based on these challenges, what lessons were learned?' This requires the AI to synthesize information.",
+      hint: "Notice how the AI can draw conclusions by combining information from multiple parts of the document."
+    }
+  ]}
+/>
+
+---
+
+## 🔬 Understanding AI Responses
+
+<div style={{
+  background: '#0F62FE',
+  padding: '24px',
+  borderRadius: '4px',
+  margin: '24px 0',
+  color: 'white',
+  border: '1px solid #4589FF'
+}}>
+  <h3 style={{marginTop: 0, color: 'white'}}>🎓 How ARGUS AI Processes Your Questions</h3>
+  <div style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
+    <p><strong>1. Question Understanding</strong></p>
+    <p style={{marginLeft: '20px'}}>The AI analyzes your question to understand intent, context, and required information type.</p>
+    
+    <p><strong>2. Document Search</strong></p>
+    <p style={{marginLeft: '20px'}}>It searches the indexed document using semantic understanding, not just keyword matching.</p>
+    
+    <p><strong>3. Context Assembly</strong></p>
+    <p style={{marginLeft: '20px'}}>Relevant passages are identified and assembled, maintaining context and relationships.</p>
+    
+    <p><strong>4. Response Generation</strong></p>
+    <p style={{marginLeft: '20px', marginBottom: 0}}>The AI synthesizes information and generates a natural language response tailored to your question.</p>
+  </div>
+</div>
+
+---
+
+## 💡 Pro Tips for Effective Querying
+
+<div style={{
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+  gap: '16px',
+  margin: '24px 0'
+}}>
+  <div style={{
+    background: '#D0E2FF',
+    padding: '20px',
+    borderRadius: '4px',
+    borderLeft: '4px solid #0F62FE'
+  }}>
+    <h4 style={{marginTop: 0, color: '#0353E9'}}>✅ Do This</h4>
+    <ul style={{marginBottom: 0, paddingLeft: '20px', color: '#161616'}}>
+      <li>Start broad, then get specific</li>
+      <li>Ask one thing at a time</li>
+      <li>Use follow-up questions</li>
+      <li>Request examples or details</li>
+    </ul>
+  </div>
+  
+  <div style={{
+    background: '#FFE6E6',
+    padding: '20px',
+    borderRadius: '4px',
+    borderLeft: '4px solid #DA1E28'
+  }}>
+    <h4 style={{marginTop: 0, color: '#A2191F'}}>❌ Avoid This</h4>
+    <ul style={{marginBottom: 0, paddingLeft: '20px', color: '#161616'}}>
+      <li>Asking multiple questions at once</li>
+      <li>Being too vague or too narrow</li>
+      <li>Assuming the AI "remembers" everything</li>
+      <li>Not verifying important information</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+## 🎯 Challenge Exercise
+
+<div style={{
+  background: '#0F62FE',
+  padding: '24px',
+  borderRadius: '4px',
+  margin: '24px 0',
+  color: 'white',
+  border: '1px solid #4589FF'
+}}>
+  <h3 style={{marginTop: 0, color: 'white'}}>🏆 Put Your Skills to the Test</h3>
+  <p style={{fontSize: '1.05rem'}}>
+    Try to extract the following information using only natural language queries:
+  </p>
+  <ol style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
+    <li>The specific date or date range of the operation</li>
+    <li>The primary mission objective</li>
+    <li>At least three specific challenges encountered</li>
+    <li>Two key recommendations for future operations</li>
+    <li>Any metrics or statistics mentioned (numbers, percentages, etc.)</li>
+  </ol>
+  <p style={{marginBottom: 0, fontSize: '1.05rem'}}>
+    <strong>Goal:</strong> Extract all five pieces of information in under 10 queries!
+  </p>
+</div>
+
+---
+
+## ✅ Step 2 Complete!
+
+<div style={{
+  background: '#24A148',
+  padding: '20px',
+  borderRadius: '4px',
+  margin: '24px 0',
+  color: 'white',
+  border: '1px solid #198038'
+}}>
+  <h3 style={{marginTop: 0, color: 'white'}}>🎉 Outstanding Work!</h3>
+  <p style={{marginBottom: 0, fontSize: '1.05rem'}}>
+    You've mastered the fundamentals of AI-powered document querying:
+  </p>
+  <ul style={{marginBottom: 0, paddingLeft: '20px', fontSize: '1.05rem'}}>
+    <li>Asking effective overview questions</li>
+    <li>Extracting specific information from documents</li>
+    <li>Building context with follow-up queries</li>
+    <li>Understanding how AI processes and responds to questions</li>
+  </ul>
+</div>
+
+### 🎯 What's Next?
+
+In **Step 3**, you'll learn advanced techniques for extracting insights, including entity analysis, timeline creation, and cross-document comparison strategies.
+
+### 🚀 Ready for Advanced Analysis?
+
+Click "Next" to move to Step 3 and unlock the full power of AI document analysis!
+
+---
+
+<div style={{
+  background: '#EDF5FF',
+  padding: '16px',
+  borderRadius: '4px',
+  borderLeft: '4px solid #0F62FE',
+  marginTop: '24px'
+}}>
+  <strong>💭 Reflection Questions</strong>
+  <ul style={{marginBottom: 0, marginTop: '8px'}}>
+    <li>How does AI querying compare to traditional document search (Ctrl+F)?</li>
+    <li>What types of questions produced the most useful responses?</li>
+    <li>How could this capability benefit your organization or role?</li>
+    <li>What limitations did you notice in the AI's responses?</li>
+  </ul>
+</div>

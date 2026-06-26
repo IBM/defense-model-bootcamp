@@ -1,0 +1,208 @@
+/* IBM Design System - Interactive Activity Component */
+
+.activityContainer {
+  background: #0F62FE;
+  border-radius: 4px;
+  padding: 24px;
+  margin: 24px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  color: white;
+  border: 1px solid #4589FF;
+}
+
+.activityHeader h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.description {
+  margin: 0 0 20px 0;
+  opacity: 0.95;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.activityContent {
+  background: rgba(237, 245, 255, 0.15);
+  border-radius: 4px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.taskItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: rgba(208, 226, 255, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border: 2px solid transparent;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.taskItem:hover {
+  background: rgba(166, 200, 255, 0.3);
+  transform: translateX(4px);
+  border-color: #A6C8FF;
+}
+
+.taskItem:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.taskItem.completed {
+  background: rgba(36, 161, 72, 0.3);
+  border-color: rgba(36, 161, 72, 0.6);
+}
+
+.taskCheckbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: rgba(237, 245, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.taskItem.completed .taskCheckbox {
+  background: #24A148;
+  color: white;
+  border-color: #24A148;
+}
+
+.taskContent {
+  flex: 1;
+}
+
+.taskTitle {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+  line-height: 1.5;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.taskDescription {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-top: 8px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.taskHint {
+  margin-top: 12px;
+  padding: 12px;
+  background: rgba(253, 209, 58, 0.25);
+  border-left: 4px solid #FDD13A;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #ffffff;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.successMessage {
+  margin-top: 20px;
+  padding: 16px;
+  background: rgba(36, 161, 72, 0.3);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  border: 2px solid #24A148;
+  animation: slideIn 0.3s ease;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.successIcon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .activityContainer {
+    padding: 16px;
+    margin: 16px 0;
+  }
+  
+  .activityHeader h3 {
+    font-size: 1.25rem;
+  }
+  
+  .taskItem {
+    padding: 12px;
+  }
+  
+  .taskTitle {
+    font-size: 1rem;
+  }
+  
+  .taskDescription {
+    font-size: 0.875rem;
+  }
+}
+
+/* Accessibility - High contrast mode support */
+@media (prefers-contrast: high) {
+  .activityContainer {
+    border: 2px solid white;
+  }
+  
+  .taskItem {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .taskCheckbox {
+    border: 2px solid white;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .taskItem,
+  .taskCheckbox,
+  .successMessage {
+    transition: none;
+    animation: none;
+  }
+  
+  .taskItem:hover {
+    transform: none;
+  }
+}
+
+/* Made with Bob */
