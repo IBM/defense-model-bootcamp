@@ -24,7 +24,7 @@ Use the click-through link below to understand how IBM technology ingests and tr
 
 Click below to access your click-thru environment:
 
-**🚀 [click-thru environment:](https://demo-now.techzone.ibm.com/psl/0f570235?g=cmp5j3f2v000000ilhrb3to9v&s=0)**
+**🚀 [click-thru environment](https://demo-now.techzone.ibm.com/psl/0f570235?g=cmp5j3f2v000000ilhrb3to9v&s=0)**
 
 ---
 
