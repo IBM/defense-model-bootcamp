@@ -5,17 +5,13 @@ title: Introduction
 
 # Introduction
 
-## Why Automate Unstructured Data Ingestion?
-
-Defense organizations generate enormous volumes of unstructured data every day — After Action Reports (AARs), doctrine documents, intelligence reports, emails, contracts, and operational logs. Manually tagging, categorizing, and disseminating this content is slow, inconsistent, and resource-intensive. AI-driven metadata enrichment solves this by converting raw documents into structured, searchable, and actionable formats automatically.
-
 ## Lab Process Flow
 
 The diagram below shows the end-to-end pipeline this lab is built around:
 
 ![Lab Process Flow](/img/lab-01b/lab-flow.png)
 
-### Discover → Enrich → Govern → Access
+### Discover → Enrich → Govern (Optional) → Access
 
 IBM technologies act as the foundational trust layer, providing responsible governance, security, risk management, compliance, and policy enforcement throughout the data lifecycle.
 

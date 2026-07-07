@@ -19,7 +19,7 @@ Take a moment to reflect on your experience:
 
 - **Hands-On Experience** — You uploaded and processed real unstructured documents using enterprise AI technology.
 - **Query Mastery** — You learned how to ask effective questions to extract insights from documents using natural language.
-- **Advanced Analysis** — You practiced entity extraction, relationship mapping, and comparative analysis.
+- **Advanced Analysis** — You practiced entity extraction, timeline creation, pattern recognition, and comparative analysis.
 - **Real-World Application** — You understand how this technology applies to defense operations, intelligence work, and operational planning.
 
 ---
@@ -89,6 +89,42 @@ Choose your path forward based on your interests and role:
 - **Speed Matters:** What takes hours manually can be done in minutes with AI
 - **Context is Key:** AI understands context and relationships, not just keywords
 - **Verification is Essential:** Always validate critical information from AI systems
+
+---
+
+## Apply What You've Learned
+
+### Take Action
+
+Now that you've completed this lab, consider these next steps:
+
+- **Share Your Experience:** Tell colleagues about what you learned and how it could benefit your organization
+- **Identify Use Cases:** Think about specific documents or processes in your work that could benefit from AI analysis
+- **Request a Demo:** Contact IBM to see how this technology could be deployed in your environment
+- **Continue Learning:** Explore the additional resources and advanced topics
+- **Provide Feedback:** Help us improve this lab by sharing your thoughts and suggestions
+
+---
+
+## Feedback
+
+### We Value Your Input!
+
+Your feedback helps us improve this lab for future participants. Please share:
+
+- What worked well in this lab?
+- What could be improved?
+- Were the instructions clear and easy to follow?
+- Did the interactive activities enhance your learning?
+- What additional topics would you like to see covered?
+
+---
+
+## Final Thoughts
+
+### You're Now Part of the AI Revolution
+
+The skills you've learned today are transforming how organizations process information, make decisions, and operate. Whether you're an analyst, developer, decision-maker, or operator, you now have hands-on experience with enterprise-grade AI technology. Use this knowledge to drive innovation in your organization and contribute to the future of intelligent document processing.
 
 ---
 

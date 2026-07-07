@@ -30,11 +30,17 @@ Click below to access your click-thru environment:
 
 ## ✅ Environment Setup Complete!
 
-Once you have access to the environment, verify you have:
+### 🎉 Great Work!
+
+You've successfully set up your lab environment. You now have:
 
 - ✅ Access to the IBM TechZone demo environment
 - ✅ The AAR document ready for analysis
 - ✅ ARGUS AI interface loaded and ready to use
+
+### 🎯 What's Next?
+
+In Step 1, you'll upload your document to ARGUS AI and start the analysis process. You'll see firsthand how AI can extract insights from unstructured data.
 
 ## 💡 Pro Tips
 
