@@ -1,199 +1,41 @@
 ---
 id: step1
-title: Step 1 - Upload and Process Your Document
-sidebar_label: Step 1 - Upload Document
+title: Step 1 - Upload Document
+sidebar_label: Step 1 : Operational Tempo
 sidebar_position: 4
 ---
 
-import InteractiveActivity from '@site/src/components/InteractiveActivity';
+# Query 1: Operational Tempo by Month
 
+**Objective:** Analyze operational tempo by visualizing the number of operations conducted within a given period of time.
 
-## 📤 Hands-On: Document Upload and Processing
+## Instructions
 
-Now comes the exciting part - you're going to upload a real document and watch AI process it in real-time! This step demonstrates how IBM's Unstructured Data Processing handles complex document formats.
+1. On the left side menu, click **"Business Intelligence"**.
+![Business Intelligence menu item](/img/lab-01b/lab-01B_Step1_1.png)
+2. In the chat input field, type or select **"How many operations were conducted each month?"** from the sample questions.
+![Chat input field with sample question selected](/img/lab-01b/lab-01B_Step1_2.png)
+3. Wait for the response to load. Then, on the upper band, click **"Show"** under Reasoning to display the SQL query.
+![Response with Reasoning panel](/img/lab-01b/lab-01B_Step1_3.png)
+4. Review the chart or table generated showing operations per month.
+![Operations by month visualization](/img/lab-01b/lab-01B_Step1_4.png)
+5. Examine the data table — note any trends, then click **"Table"** to switch to the tabular view.
+![Operational tempo data table](/img/lab-01b/lab-01B_Step1_5.png)
+6. Verify the results are displayed and ready for further analysis.
+![Results ready for analysis](/img/lab-01b/lab-01B_Step1_6.png)
 
-### What's Happening Behind the Scenes?
+## Expected Result
 
-When you upload a document to ARGUS AI, several sophisticated processes occur:
+ARGUS AI returns a line chart and a tabular view showing **24 rows** of monthly operation counts, sourced from the `Equipment_Performance_Metrics` table. The results span from **January 2024** through **early 2026**.
 
-1. **Document Ingestion**: The system reads the file format (DOCX, PDF, etc.)
-2. **Text Extraction**: Content is extracted while preserving structure
-3. **Metadata Analysis**: The system identifies document properties, dates, entities
-4. **Indexing**: Content is indexed for fast retrieval
-5. **Vector Embedding**: Text is converted to mathematical representations for AI understanding
+Key observations from the data:
+- **Peak activity** occurred in **April 2024** with **31 operations**
+- **March 2024** was also high at **30 operations**
+- A general **downward trend** is visible from mid-2024 into 2025, with counts dropping to the low teens
+- The **Reasoning panel** shows the auto-generated SQL query used to produce the result, grouping operations by month and ordering chronologically
 
-All of this happens in seconds!
+You can toggle between the **Chart** and **Table** views, or export the data using the **↓ CSV** button.
 
----
+## 💡 Tip
 
-## 🎯 Activity 1: Upload Your Document
-
-<InteractiveActivity
-  title="Upload the AAR Document to ARGUS AI"
-  description="Time to put the system to work! Follow these steps to upload and process your document."
-  tasks={[
-    {
-      title: "Locate the Upload Area",
-      description: "In the ARGUS AI interface, find the document upload button or drag-and-drop zone. It's usually prominently displayed at the top of the interface.",
-      hint: "Look for icons like 📎, 📄, or text saying 'Upload Document' or 'Add Document'."
-    },
-    {
-      title: "Upload the AAR Document",
-      description: "Click the upload button and select 'AAR_AngelFireUnclass.docx' from your Downloads folder, OR drag the file directly into the upload zone.",
-      hint: "Watch for a progress indicator - the file should upload within a few seconds."
-    },
-    {
-      title: "Wait for Processing",
-      description: "The system will now process your document. You should see a loading indicator or progress message. This typically takes 10-30 seconds.",
-      hint: "The system is extracting text, analyzing structure, and creating searchable indexes. Be patient!"
-    },
-    {
-      title: "Confirm Upload Success",
-      description: "Look for a confirmation message like 'Document uploaded successfully' or 'Ready to analyze'. The document name should appear in the interface.",
-      hint: "If you see an error, check the file format and try again. DOCX and PDF formats work best."
-    }
-  ]}
-/>
-
----
-
-## 🎯 Activity 2: Explore Document Metadata
-
-<InteractiveActivity
-  title="Review What the System Learned"
-  description="Now that your document is uploaded, let's see what ARGUS AI automatically detected."
-  tasks={[
-    {
-      title: "Check Document Information",
-      description: "Look for a document info panel or metadata section. This shows what the system automatically extracted: file size, page count, word count, etc.",
-      hint: "This metadata was extracted without any manual input - that's the power of automated processing!"
-    },
-    {
-      title: "Verify Document Status",
-      description: "Confirm the document status shows as 'Processed', 'Ready', or 'Indexed'. This means it's ready for querying.",
-      hint: "If the status shows 'Processing', wait a few more seconds and refresh if needed."
-    },
-    {
-      title: "Note the Processing Time",
-      description: "If displayed, observe how quickly the system processed your document. Modern AI can analyze thousands of words in seconds!",
-      hint: "Traditional manual analysis of this document would take 30-60 minutes. AI does it in under a minute!"
-    }
-  ]}
-/>
-
----
-
-## 🎯 Activity 3: Test Basic Connectivity
-
-<InteractiveActivity
-  title="Verify ARGUS AI Can Access Your Document"
-  description="Let's do a quick test to ensure everything is working correctly."
-  tasks={[
-    {
-      title: "Ask a Simple Question",
-      description: "In the chat interface, type: 'What type of document is this?' and press Enter. This tests basic document understanding.",
-      hint: "ARGUS AI should respond with something like 'This is an After Action Review (AAR) document' or similar."
-    },
-    {
-      title: "Review the Response",
-      description: "Read ARGUS AI's response. It should correctly identify the document type and possibly provide additional context.",
-      hint: "The AI is pulling this information directly from the document content and structure."
-    },
-    {
-      title: "Verify Response Time",
-      description: "Notice how quickly you got a response - typically 2-5 seconds. This demonstrates real-time AI analysis.",
-      hint: "The system is searching through the entire document, understanding context, and generating a natural language response - all in seconds!"
-    }
-  ]}
-/>
-
----
-
-## 🔍 What Just Happened?
-
-<div style={{
-  background: '#0F62FE',
-  padding: '24px',
-  borderRadius: '4px',
-  margin: '24px 0',
-  color: 'white',
-  border: '1px solid #4589FF'
-}}>
-  <h3 style={{marginTop: 0, color: 'white'}}>🎓 Learning Moment</h3>
-  <p style={{fontSize: '1.05rem', lineHeight: '1.6'}}>
-    You just experienced the core capability of Unstructured Data Processing:
-  </p>
-  <ul style={{lineHeight: '1.8', fontSize: '1.05rem'}}>
-    <li><strong>Automated Ingestion</strong>: No manual data entry required</li>
-    <li><strong>Intelligent Parsing</strong>: The system understood document structure</li>
-    <li><strong>Instant Indexing</strong>: Content is immediately searchable</li>
-    <li><strong>Natural Language Interface</strong>: You can ask questions in plain English</li>
-  </ul>
-  <p style={{marginBottom: 0, fontSize: '1.05rem', marginTop: '16px'}}>
-    This is exactly how defense organizations can process intelligence reports, operational documents, and mission data at scale!
-  </p>
-</div>
-
----
-
-## 💡 Real-World Application
-
-**Military Use Case**: Imagine you're an intelligence analyst with 50 After Action Reviews from recent operations. Instead of reading each one manually (25+ hours of work), you could:
-
-1. Upload all 50 documents to the system (5 minutes)
-2. Ask: "What are the common challenges across all operations?"
-3. Get a comprehensive analysis in under a minute
-4. Query specific details: "Which operations mentioned supply chain issues?"
-
-This is the power of AI-driven document analysis in defense operations!
-
----
-
-## ✅ Step 1 Complete!
-
-<div style={{
-  background: '#24A148',
-  padding: '20px',
-  borderRadius: '4px',
-  margin: '24px 0',
-  color: 'white',
-  border: '1px solid #198038'
-}}>
-  <h3 style={{marginTop: 0, color: 'white'}}>🎉 Excellent Progress!</h3>
-  <p style={{marginBottom: 0, fontSize: '1.05rem'}}>
-    You've successfully:
-  </p>
-  <ul style={{marginBottom: 0, paddingLeft: '20px', fontSize: '1.05rem'}}>
-    <li>Uploaded an unstructured document to ARGUS AI</li>
-    <li>Watched the system process and index the content</li>
-    <li>Verified the AI can understand and respond to queries</li>
-    <li>Experienced real-time document analysis</li>
-  </ul>
-</div>
-
-### 🎯 What's Next?
-
-In **Step 2**, you'll dive deeper into document analysis. You'll learn how to ask sophisticated questions, extract specific information, and understand how ARGUS AI reasons about document content.
-
-### 🚀 Ready to Continue?
-
-Click "Next" to move to Step 2, where you'll become proficient at querying documents with AI!
-
----
-
-<div style={{
-  background: '#FFF8E1',
-  padding: '16px',
-  borderRadius: '4px',
-  borderLeft: '4px solid #FDD13A',
-  marginTop: '24px',
-  color: '#856404'
-}}>
-  <strong>⚠️ Troubleshooting Common Issues</strong>
-  <ul style={{marginBottom: 0, marginTop: '8px'}}>
-    <li><strong>Upload Failed</strong>: Check file size (should be under 10MB) and format (DOCX or PDF)</li>
-    <li><strong>Processing Stuck</strong>: Refresh the page and try uploading again</li>
-    <li><strong>No Response to Questions</strong>: Verify the document status shows as "Processed" or "Ready"</li>
-    <li><strong>Slow Performance</strong>: This can happen with large documents; wait 30-60 seconds</li>
-  </ul>
-</div>
+The response may take up to 30 seconds — do not refresh the page. Results may vary slightly depending on the generated SQL query.

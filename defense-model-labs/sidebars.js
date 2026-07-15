@@ -138,6 +138,11 @@ const sidebars = {
         },
         {
           type: 'doc',
+          id: 'lab-01b-unstructured-data/step4',
+          label: 'Step 4: Navigate the Interface',
+        },
+        {
+          type: 'doc',
           id: 'lab-01b-unstructured-data/completion',
           label: 'Lab Completion',
         },
@@ -225,7 +230,42 @@ const sidebars = {
         {
           type: 'doc',
           id: 'lab-03-fine-tuning/index',
+          label: 'Lab Overview',
+        },
+        {
+          type: 'doc',
+          id: 'lab-03-fine-tuning/overview',
           label: 'Overview',
+        },
+        {
+          type: 'doc',
+          id: 'lab-03-fine-tuning/introduction',
+          label: 'Introduction',
+        },
+        {
+          type: 'doc',
+          id: 'lab-03-fine-tuning/setup',
+          label: 'Lab Environment Setup',
+        },
+        {
+          type: 'doc',
+          id: 'lab-03-fine-tuning/step1',
+          label: 'Step 1: Prepare Training Data',
+        },
+        {
+          type: 'doc',
+          id: 'lab-03-fine-tuning/step2',
+          label: 'Step 2: Run Fine-Tuning Job',
+        },
+        {
+          type: 'doc',
+          id: 'lab-03-fine-tuning/step3',
+          label: 'Step 3: Evaluate Model',
+        },
+        {
+          type: 'doc',
+          id: 'lab-03-fine-tuning/completion',
+          label: 'Lab Completion',
         },
       ],
     },

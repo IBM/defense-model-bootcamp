@@ -3,9 +3,10 @@ sidebar_position: 2
 title: Step 1 - Upload AAR
 ---
 
-# Step 1: Upload the After Action Report
+# Query 1: Operational tempo: How many operations were conducted each month?
 
-**Objective:** Load the AAR document into ARGUS AI for analysis.
+
+**Objective:**Analyze the Operational Tempo
 
 ## Instructions
 

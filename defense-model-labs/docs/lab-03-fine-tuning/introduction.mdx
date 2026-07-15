@@ -1,0 +1,29 @@
+---
+id: introduction
+title: Introduction
+sidebar_label: Introduction
+sidebar_position: 2
+---
+
+## Why fine-tune the IBM Defense Model?
+
+<p><a href="https://www.ibm.com/products/watsonx-ai/defense-model" target="_blank" rel="noopener noreferrer">https://www.ibm.com/products/watsonx-ai/defense-model</a></p>
+
+<div><p>General-purpose large language models are trained on broad, publicly available data. While powerful, they often lack the specialized vocabulary, contextual understanding, and reasoning patterns required for high-stakes defense and intelligence applications. Fine-tuning adapts a pre-trained model to a specific domain or task using curated examples, producing a model that is more accurate, more relevant, and better aligned with mission requirements.</p></div>
+
+<ul>
+  <li><strong>Improve accuracy on domain-specific tasks.</strong><br />Fine-tuning teaches the model to recognize defense terminology, military acronyms, operational concepts, and classification conventions that a general model may misinterpret.</li>
+  <li><strong>Align model behavior to organizational standards.</strong><br />Train the model to follow specific response formats, tone guidelines, and information handling policies required in your operational environment.</li>
+  <li><strong>Reduce hallucination risk.</strong><br />A model fine-tuned on vetted, authoritative defense data is less likely to fabricate facts when answering domain-specific queries.</li>
+  <li><strong>Enable specialized workflows.</strong><br />Fine-tuned models can be optimized for specific tasks such as entity extraction from intelligence reports, threat classification, or automated document summarization.</li>
+  <li><strong>Maintain data sovereignty.</strong><br />Fine-tuning can be performed on-premises or in a secure cloud environment, keeping sensitive training data within your controlled boundary.</li>
+</ul>
+
+## Architecture
+
+{/* TODO: replace with ARGUS AI fine-tuning architecture diagram once available */}
+<p><img src={require('@site/static/img/argus-ai/ArgusAI_Architecture.png').default} alt="ARGUS AI Architecture" style={{width: '100%', height: 'auto', margin: '0 auto', display: 'block'}} /></p>
+
+<p>In this lab, you will use the <strong>ARGUS AI Fine-tuning Lab</strong> to evaluate a pre-trained fine-tuned IBM Defense Model against the base model using the <strong>Model Performance Comparison</strong> tool. You will configure the comparison run, upload an evaluation dataset, and analyze the results dashboard — all without writing code.</p>
+
+<p>Fine-tuning uses a supervised learning approach: a set of curated input-output example pairs is used to update the model's weights so it learns to produce the desired outputs for domain-specific inputs. The result is a customized model checkpoint that inherits the base Defense Model's capabilities while excelling at a specific task — in this case, classifying defense entity queries by category. In this lab, the fine-tuning has already been performed; your focus is on understanding how to measure and interpret the improvement it produced.</p>
