@@ -97,7 +97,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Lab 1B: Unstructured Data Processing',
+      label: 'Lab 1B: Unstructured Data Processing with IBM Defense Model',
       collapsible: true,
       collapsed: false,
       items: [
@@ -124,22 +124,22 @@ const sidebars = {
         {
           type: 'doc',
           id: 'lab-01b-unstructured-data/step1',
-          label: 'Step 1: Upload Document',
+          label: 'Step 1: Operational Tempo',
         },
         {
           type: 'doc',
           id: 'lab-01b-unstructured-data/step2',
-          label: 'Step 2: Query Documents',
+          label: 'Step 2: Operations Location & Outcome',
         },
         {
           type: 'doc',
           id: 'lab-01b-unstructured-data/step3',
-          label: 'Step 3: Extract Insights',
+          label: 'Step 3: Equipment Issues Ranked',
         },
         {
           type: 'doc',
           id: 'lab-01b-unstructured-data/step4',
-          label: 'Step 4: Navigate the Interface',
+          label: 'Step 4: Equipment Performance Rating',
         },
         {
           type: 'doc',
