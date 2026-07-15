@@ -1,0 +1,35 @@
+---
+id: step4
+title: Step 4 - Navigate the Interface
+sidebar_label: Step 4 : Equipment Performance Rating
+sidebar_position: 7
+---
+
+# Query 4: Best-Performing Equipment Systems Across All Operations
+
+**Objective:** Identify which equipment systems have the highest performance ratings across all operations to inform future procurement and deployment decisions.
+
+## Instructions
+
+1. In the middle panel, click **"Sample Questions"**.
+![Business Intelligence menu item](/img/lab-01b/lab-01B_Step4_1.png)
+2. In the chat input field, type or select **"Which equipment systems have the best performance rating across all operations?"** from the sample questions.
+![Chat input field with sample question selected](/img/lab-01b/lab-01B_Step4_2.png)
+3. Wait for the response to load. Then, on the upper band, click **"Show"** under Reasoning to display the SQL query.
+![Response with Reasoning panel](/img/lab-01b/lab-01B_Step4_3.png)
+
+## Expected Result
+
+ARGUS AI returns a ranked list of equipment systems ordered by average performance rating across all operations, sourced from the `Equipment_Performance_Metrics` table.
+
+Key observations from the data:
+- **Top-rated systems** consistently score high across multiple operations, indicating reliability under varied conditions
+- **Performance ratings** are averaged across all operations each system participated in, smoothing out single-operation outliers
+- Comparing these results against the equipment issues from Step 3 reveals systems that are both high-performing and low-maintenance
+- The **Reasoning panel** shows the auto-generated SQL query averaging performance ratings per equipment system and ordering results descending
+
+You can toggle between the **Chart** and **Table** views, or export the data using the **↓ CSV** button.
+
+## 💡 Tip
+
+The response may take up to 30 seconds — do not refresh the page. Results may vary slightly depending on the generated SQL query. Cross-reference with Step 3 to identify equipment systems that rank highly on performance but low on reported issues.

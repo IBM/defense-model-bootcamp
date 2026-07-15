@@ -1,0 +1,35 @@
+---
+id: step3
+title: Step 3 - Extract Insights
+sidebar_label: Step 3 : Equipment Issues Ranked
+sidebar_position: 6
+---
+
+# Query 3: Equipment Issues Aggregated and Ranked Across Operations
+
+**Objective:** Aggregate and rank equipment issues across all operations to identify which problems occur most frequently and where attention is most needed.
+
+## Instructions
+
+1. In the middle panel, click **"Sample Questions"**.
+![Business Intelligence menu item](/img/lab-01b/lab-01B_Step3_1.png)
+2. In the chat input field, type or select **"Aggregate and rank equipment issues across operations"** from the sample questions.
+![Chat input field with sample question selected](/img/lab-01b/lab-01B_Step3_2.png)
+3. Wait for the response to load. Then, on the upper band, click **"Show"** under Reasoning to display the SQL query.
+![Response with Reasoning panel](/img/lab-01b/lab-01B_Step3_3.png)
+
+## Expected Result
+
+ARGUS AI returns a ranked list of equipment issues aggregated across all operations, sourced from the `Equipment_Performance_Metrics` table.
+
+Key observations from the data:
+- The **top-ranked issues** represent the most frequently occurring equipment problems across the full dataset
+- **Issue frequency** varies significantly — a small number of issue types account for the majority of reported incidents
+- The ranking enables **prioritization** of maintenance and procurement decisions based on operational impact
+- The **Reasoning panel** shows the auto-generated SQL query grouping, counting, and ordering issues by occurrence across all operations
+
+You can toggle between the **Chart** and **Table** views, or export the data using the **↓ CSV** button.
+
+## 💡 Tip
+
+The response may take up to 30 seconds — do not refresh the page. Results may vary slightly depending on the generated SQL query.

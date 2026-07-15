@@ -1,0 +1,218 @@
+---
+id: step3
+title: Step 3 - Evaluate the Fine-Tuned Model
+sidebar_label: Step 3 - Evaluate Model
+sidebar_position: 6
+---
+
+import InteractiveActivity from '@site/src/components/InteractiveActivity';
+
+
+## 🔬 Hands-On: Model Evaluation
+
+Your fine-tuning job is complete! Now it's time to see how well it worked. In this step, you'll use the **Model Performance Comparison** dashboard in ARGUS AI to compare your fine-tuned model against the base IBM Defense Model across multiple evaluation dimensions.
+
+### What to Look for in Evaluation
+
+A good fine-tuned model should show improvement in:
+
+- **Overall accuracy**: Higher percentage of correct classifications on the validation dataset
+- **Category-wise performance**: Improvement across individual entity categories (equipment, events, installations, inventory, military groups, organizations, ships)
+- **Error reduction**: Fewer misclassifications compared to the base model
+- **Consistency**: Balanced performance across categories, not just strong in one area
+
+---
+
+## 🎯 Activity 1: Review the Model Performance Comparison Dashboard
+
+### Step 1: Navigate to the Fine-Tuning Lab and Open the Comparison View
+
+On the left side menu, click **"Fine-tuning Lab"**. The **Model Performance Comparison** dashboard loads, showing a full side-by-side evaluation of your fine-tuned model against the base model — including accuracy scores, a category bar chart, a performance radar, category details, error listings, and key insights.
+
+![Model Performance Comparison dashboard full overview](/img/lab-03/step3_1.png)
+
+### Step 2: Review the Top-Level Accuracy Scores and Performance Delta
+
+Examine the two score cards at the top of the dashboard. The **Fine-tuned Model** card (green, marked "Best Performance") shows **92.31%** accuracy with 12 correct and 1 error. The **Base Model** card (purple) shows **84.62%** with 11 correct and 2 errors. The **Performance Delta** panel below confirms the fine-tuned model performs **+7.69% better** than the base model.
+
+![Accuracy score cards and performance delta showing +7.69% improvement](/img/lab-03/step3_2.png)
+
+<InteractiveActivity
+  title="Interpret the Top-Level Results"
+  description="Review the accuracy scores and performance delta for both models."
+  tasks={[
+    {
+      title: "Identify the Best-Performing Model",
+      description: "Look at the two score cards at the top of the dashboard. Which model is marked 'Best Performance'? What is the fine-tuned model's overall accuracy compared to the base model?",
+      hint: "The green card with the 'Best Performance' badge is your fine-tuned model. Note both the percentage and the raw correct/error counts."
+    },
+    {
+      title: "Read the Performance Delta",
+      description: "Find the Performance Delta panel below the score cards. What does +7.69% mean in practical terms for this validation dataset?",
+      hint: "A +7.69% improvement means the fine-tuned model correctly classified more questions from the validation set — in this case, reducing errors from 2 to 1."
+    }
+  ]}
+/>
+
+---
+
+## 🎯 Activity 2: Explore the Category-wise Accuracy Bar Chart
+
+### Step 3: Read the Category-wise Accuracy Comparison Chart
+
+Scroll down to the **Category-wise Accuracy Comparison** bar chart. Each category (equipment, events, installations, inventory, military groups, non-state-groups, organizations, ships) has two bars — blue for the fine-tuned model and purple for the base model. Note where the fine-tuned model's blue bar is taller than the base model's purple bar.
+
+![Category-wise accuracy comparison bar chart](/img/lab-03/step3_3.png)
+
+### Step 4: Hover Over a Category Bar to See the Tooltip
+
+Click or hover over the **inventory** category bars in the chart. A tooltip appears showing: **Base Model: 50.00%** and **Fine-tuned Model: 100.00%**. This reveals the biggest single improvement — the fine-tuned model achieved perfect accuracy on inventory questions where the base model only got half correct.
+
+![Inventory category tooltip showing Base Model 50% vs Fine-tuned Model 100%](/img/lab-03/step3_4.png)
+
+### Step 5: Click the Inventory Bar to Open the Question Detail Panel
+
+Click on the **inventory** bar to open the **Inventory Questions** side panel. It shows 2 questions from the uploaded CSV. For Q1 ("Show the inventory of Russian Aerospace Forces") — both models answered correctly with **inventory**. For Q2 ("How many platforms does Sweden have in service?") — the fine-tuned model correctly answered **inventory** while the base model incorrectly answered **equipment**.
+
+![Inventory Questions panel showing Q1 and Q2 model answers side by side](/img/lab-03/step3_5.png)
+
+<InteractiveActivity
+  title="Analyze Category Performance"
+  description="Use the bar chart and question drill-down to understand where fine-tuning made the biggest difference."
+  tasks={[
+    {
+      title: "Identify the Category with the Biggest Improvement",
+      description: "Compare the blue and purple bars across all categories. Which category shows the largest gap between the fine-tuned and base model accuracy?",
+      hint: "Look for a category where the blue (fine-tuned) bar is significantly taller than the purple (base) bar. Inventory shows Base: 50% vs Fine-tuned: 100%."
+    },
+    {
+      title: "Drill Down into the Inventory Category",
+      description: "Click the inventory bar to open the question detail panel. Review which specific question the base model got wrong that the fine-tuned model answered correctly.",
+      hint: "Q2 ('How many platforms does Sweden have in service?') is the question where the base model predicted 'equipment' but the correct answer was 'inventory'."
+    },
+    {
+      title: "Identify Categories Where Both Models Perform Equally",
+      description: "Find categories where the fine-tuned and base model bars are the same height. What does this tell you about the impact of fine-tuning on those categories?",
+      hint: "Equipment, events, and installations both score 100% for both models — fine-tuning didn't hurt those categories and they were already at ceiling."
+    }
+  ]}
+/>
+
+---
+
+## 🎯 Activity 3: Review the Performance Radar and Category Details
+
+### Step 6: Examine the Performance Radar Chart and Category Details
+
+Scroll down past the bar chart to find the **Performance Radar** — a spider/radar chart that visually compares both models across all categories simultaneously. The fine-tuned model's blue shape is larger than the base model's purple shape, confirming broader coverage. Below the radar, the **Category Details** panels show a side-by-side breakdown of each category's accuracy with color-coded progress bars (green for high, amber for mid, red for low).
+
+![Performance radar chart and category details side by side for both models](/img/lab-03/step3_6.png)
+
+### Step 7: Review the Error Listings and Key Insights
+
+Scroll to the bottom of the dashboard. The **Fine-tuned Model - Errors (1)** panel shows a single misclassification: "What are the different roles of equipment operated by the Japan" — Actual: **military-groups**, Predicted: **equipment**. The **Base Model - Errors (2)** panel shows two errors, including the same question plus "How many platforms does Sweden have in service?" The **Key Insights** section at the very bottom summarizes the evaluation findings automatically.
+
+![Error listings for both models and Key Insights summary](/img/lab-03/step3_7.png)
+
+<InteractiveActivity
+  title="Interpret the Radar, Errors, and Key Insights"
+  description="Use the lower sections of the dashboard to complete your evaluation analysis."
+  tasks={[
+    {
+      title: "Read the Performance Radar",
+      description: "Look at the radar chart. The fine-tuned model's blue shape should extend further than the base model's purple shape in at least one dimension. Which categories show the clearest outward extension?",
+      hint: "The inventory axis is where the fine-tuned model's shape extends furthest beyond the base model, reflecting the 50% → 100% improvement in that category."
+    },
+    {
+      title: "Compare the Error Counts",
+      description: "Review the Fine-tuned Model Errors (1) and Base Model Errors (2) panels. How many fewer errors did fine-tuning produce, and which question does the fine-tuned model still get wrong?",
+      hint: "Fine-tuning reduced errors from 2 to 1. The remaining error for the fine-tuned model is the Japan equipment roles question — it predicted 'equipment' but the answer was 'military-groups'."
+    },
+    {
+      title: "Read the Key Insights Summary",
+      description: "Scroll to the Key Insights section at the bottom. Review the five auto-generated findings. Do these match your own observations from working through the dashboard?",
+      hint: "The Key Insights confirm: +7.69% overall improvement, best performance on events/non-state-groups/ships, inventory remaining challenging for the base model, and the most common confusion being equipment vs inventory vs military-groups."
+    }
+  ]}
+/>
+
+---
+
+## 🔬 Understanding the Evaluation Results
+
+<div style={{
+  background: '#0F62FE',
+  padding: '24px',
+  borderRadius: '4px',
+  margin: '24px 0',
+  color: 'white',
+  border: '1px solid #4589FF'
+}}>
+  <h3 style={{marginTop: 0, color: 'white'}}>🎓 What These Numbers Mean</h3>
+  <div style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
+    <p><strong>92.31% vs 84.62% Overall Accuracy</strong></p>
+    <p style={{marginLeft: '20px'}}>The fine-tuned model correctly classified 12 out of 13 validation questions versus 11 out of 13 for the base model — a meaningful improvement on a held-out dataset the model never saw during training.</p>
+
+    <p><strong>+7.69% Performance Delta</strong></p>
+    <p style={{marginLeft: '20px'}}>This delta represents the direct impact of fine-tuning on the IBM Defense Model using your domain-specific training data. In production, even small accuracy gains can translate to significant time savings at scale.</p>
+
+    <p><strong>Inventory: 50% → 100%</strong></p>
+    <p style={{marginLeft: '20px'}}>The largest single-category improvement. The base model confused inventory questions with equipment — fine-tuning on domain examples taught the model to distinguish these correctly.</p>
+
+    <p><strong>Remaining Error: Japan Equipment Roles</strong></p>
+    <p style={{marginLeft: '20px', marginBottom: 0}}>The one remaining misclassification (military-groups predicted as equipment) points to an area where additional training examples covering military role questions could further improve the model.</p>
+  </div>
+</div>
+
+---
+
+## ✅ Step 3 Complete!
+
+<div style={{
+  background: '#24A148',
+  padding: '20px',
+  borderRadius: '4px',
+  margin: '24px 0',
+  color: 'white',
+  border: '1px solid #198038'
+}}>
+  <h3 style={{marginTop: 0, color: 'white'}}>🎉 Exceptional Achievement!</h3>
+  <p style={{marginBottom: 0, fontSize: '1.05rem'}}>
+    You've mastered the fine-tuning evaluation workflow:
+  </p>
+  <ul style={{marginBottom: 0, paddingLeft: '20px', fontSize: '1.05rem'}}>
+    <li>Reviewed top-level accuracy scores and confirmed a +7.69% improvement</li>
+    <li>Explored category-wise accuracy differences across 8 entity categories</li>
+    <li>Drilled into individual question results using the category detail panel</li>
+    <li>Interpreted the Performance Radar for a holistic model comparison</li>
+    <li>Analyzed error listings and auto-generated Key Insights</li>
+  </ul>
+</div>
+
+### 🎯 What's Next?
+
+You've completed all the hands-on activities! Head to the **Completion** page to:
+- Review what you've learned
+- Explore next steps in your fine-tuning journey
+- Access additional resources
+- Provide feedback on the lab
+
+### 🚀 Continue Your Journey
+
+Click "Next" to complete the lab and discover how to apply these skills in your organization!
+
+---
+
+<div style={{
+  background: '#0F62FE',
+  padding: '20px',
+  borderRadius: '4px',
+  margin: '24px 0',
+  color: 'white',
+  border: '1px solid #4589FF'
+}}>
+  <h4 style={{marginTop: 0, color: 'white'}}>🌟 Congratulations!</h4>
+  <p style={{marginBottom: 0, fontSize: '1.05rem', lineHeight: '1.6'}}>
+    You now have hands-on experience with the complete fine-tuning workflow: from data preparation through model evaluation. These skills are directly applicable to intelligence analysis, operational planning, compliance review, and any defense use case that requires a model trained on authoritative, domain-specific data. You're ready to bring fine-tuned AI capabilities to your organization!
+  </p>
+</div>

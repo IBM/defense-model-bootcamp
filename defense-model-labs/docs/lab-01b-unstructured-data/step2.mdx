@@ -1,0 +1,37 @@
+---
+id: step2
+title: Step 2 - Query Documents
+sidebar_label: Step 2 : Operations Location & Outcome
+sidebar_position: 5
+---
+
+# Query 2: Operations with Location, Branch, and Mission Outcome
+
+**Objective:** Retrieve all operations alongside their location coordinates, military branch, and mission outcome to enable geographic and outcome-based analysis.
+
+## Instructions
+
+1. In the middle panel, click **"Sample Questions"**.
+![Business Intelligence menu item](/img/lab-01b/lab-01B_Step2_1.png)
+2. In the chat input field, type or select **"Show all operations with their location coordinates, military branch, and mission outcome"** from the sample questions.
+![Chat input field with sample question selected](/img/lab-01b/lab-01B_Step2_2.png)
+3. Wait for the response to load. Then, on the map, click **on any blue bubble** to display the location legend.
+![Map view with operation location bubbles](/img/lab-01b/lab-01B_Step2_3.png)
+4. On the upper band, click **"Show"** under Reasoning to display the SQL query.
+![Operations with location and outcome data](/img/lab-01b/lab-01B_Step2_4.png)
+
+## Expected Result
+
+ARGUS AI returns a map and a tabular view listing all operations with their location coordinates, military branch, and mission outcome, sourced from the `Equipment_Performance_Metrics` table.
+
+Key observations from the data:
+- Each row surfaces an **operation name**, **latitude/longitude coordinates**, **military branch**, and **mission outcome** in a single flat view
+- **Multiple branches** are represented across the dataset, enabling cross-branch comparison
+- **Mission outcomes** vary across operations and can be filtered or sorted to isolate successful vs. unsuccessful missions
+- The **Reasoning panel** shows the auto-generated SQL query selecting the relevant columns across all operations
+
+You can toggle between the **Map** and **Table** views, or export the data using the **↓ CSV** button.
+
+## 💡 Tip
+
+The response may take up to 30 seconds — do not refresh the page. Results may vary slightly depending on the generated SQL query.

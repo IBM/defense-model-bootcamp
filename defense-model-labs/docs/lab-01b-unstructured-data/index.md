@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Lab Overview
+title: Lab 1B Overview
 ---
 
 # Lab 1B: Unstructured Data Processing with IBM Defense Model
@@ -21,12 +21,14 @@ This lab demonstrates one of the real-world implementations of a Defense Model t
 
 This comprehensive lab includes:
 
-- **[Overview](./index.md)** — Lab objectives and learning outcomes
-- **[Introduction](./introduction.md)** — Why automate unstructured data ingestion
-- **[Lab Setup](./lab-setup.md)** — Environment configuration and access
-- **[Step 1: Query 1](./step-01-query1.md)** — Document upload and processing
-- **[Step 2: Query 2](./step-02-query2.md)** — Master document querying techniques
-- **[Completion](./completion.md)** — Lab summary and next steps
+- **[Overview](./overview)** - Lab objectives and learning outcomes
+- **[Introduction](./introduction)** - Why automate unstructured data ingestion
+- **[Lab Setup](./setup)** - Environment configuration and access
+- **[Step 1: Operational Tempo by Month](./step1)** - Analyze operations conducted each month
+- **[Step 2: Operations with Location, Branch, and Mission Outcome](./step2)** - Retrieve operations with coordinates and outcomes
+- **[Step 3: Equipment Issues Ranked](./step3)** - Aggregate and rank equipment issues
+- **[Step 4: Equipment Performance Rating](./step4)** - Identify best-performing equipment systems
+- **[Completion](./completion)** - Lab summary and next steps
 
 ## 🎯 What You'll Learn
 
@@ -41,4 +43,8 @@ This lab highlights how AI-driven metadata enrichment enables defense organizati
 
 ---
 
-Next: **[Introduction →](./introduction.md)**
+**Ready to begin?** Click on **[Overview](./overview)** to start the lab!
+
+---
+
+Next Lab: **[Lab 2: IBM Defense Model Factchecker →](../lab-02-factchecker/)**

@@ -1,0 +1,41 @@
+---
+id: step1
+title: Step 1 - Upload Document
+sidebar_label: Step 1 : Operational Tempo
+sidebar_position: 4
+---
+
+# Query 1: Operational Tempo by Month
+
+**Objective:** Analyze operational tempo by visualizing the number of operations conducted within a given period of time.
+
+## Instructions
+
+1. On the left side menu, click **"Business Intelligence"**.
+![Business Intelligence menu item](/img/lab-01b/lab-01B_Step1_1.png)
+2. In the chat input field, type or select **"How many operations were conducted each month?"** from the sample questions.
+![Chat input field with sample question selected](/img/lab-01b/lab-01B_Step1_2.png)
+3. Wait for the response to load. Then, on the upper band, click **"Show"** under Reasoning to display the SQL query.
+![Response with Reasoning panel](/img/lab-01b/lab-01B_Step1_3.png)
+4. Review the chart or table generated showing operations per month.
+![Operations by month visualization](/img/lab-01b/lab-01B_Step1_4.png)
+5. Examine the data table — note any trends, then click **"Table"** to switch to the tabular view.
+![Operational tempo data table](/img/lab-01b/lab-01B_Step1_5.png)
+6. Verify the results are displayed and ready for further analysis.
+![Results ready for analysis](/img/lab-01b/lab-01B_Step1_6.png)
+
+## Expected Result
+
+ARGUS AI returns a line chart and a tabular view showing **24 rows** of monthly operation counts, sourced from the `Equipment_Performance_Metrics` table. The results span from **January 2024** through **early 2026**.
+
+Key observations from the data:
+- **Peak activity** occurred in **April 2024** with **31 operations**
+- **March 2024** was also high at **30 operations**
+- A general **downward trend** is visible from mid-2024 into 2025, with counts dropping to the low teens
+- The **Reasoning panel** shows the auto-generated SQL query used to produce the result, grouping operations by month and ordering chronologically
+
+You can toggle between the **Chart** and **Table** views, or export the data using the **↓ CSV** button.
+
+## 💡 Tip
+
+The response may take up to 30 seconds — do not refresh the page. Results may vary slightly depending on the generated SQL query.

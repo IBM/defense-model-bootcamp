@@ -5,6 +5,7 @@ title: Step 1 - Upload AAR
 
 # Step 1: Upload the After Action Report
 
+
 **Objective:** Load the AAR document into ARGUS AI for analysis.
 
 ## Instructions
