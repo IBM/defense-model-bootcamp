@@ -21,7 +21,7 @@ This lab demonstrates one of the real-world implementations of a Defense Model t
 
 This comprehensive lab includes:
 
-- **[Overview](./overview)** - Lab objectives and learning outcomes
+- **[Introduction](./introduction)** - Lab objectives and learning outcomes
 - **[Introduction](./introduction)** - Why automate unstructured data ingestion
 - **[Lab Setup](./setup)** - Environment configuration and access
 - **[Step 1: Operational Tempo by Month](./step1)** - Analyze operations conducted each month
@@ -43,7 +43,7 @@ This lab highlights how AI-driven metadata enrichment enables defense organizati
 
 ---
 
-**Ready to begin?** Click on **[Overview](./overview)** to start the lab!
+**Ready to begin?** Click on **[Introduction](./introduction)** to start the lab!
 
 ---
 
