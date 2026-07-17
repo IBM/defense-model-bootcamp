@@ -1,37 +1,35 @@
 /* IBM Design System - Interactive Activity Component */
 
 .activityContainer {
-  background: #0F62FE;
+  background: #f4f4f4;
   border-radius: 4px;
   padding: 24px;
   margin: 24px 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  color: white;
-  border: 1px solid #4589FF;
+  border: 1px solid #e0e0e0;
+  color: #161616;
 }
 
 .activityHeader h3 {
   margin: 0 0 12px 0;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: white;
+  color: #161616;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .description {
   margin: 0 0 20px 0;
-  opacity: 0.95;
   font-size: 1rem;
   line-height: 1.7;
+  color: #525252;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .activityContent {
-  background: rgba(237, 245, 255, 0.15);
+  background: #ffffff;
   border-radius: 4px;
   padding: 20px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid #e0e0e0;
 }
 
 .taskList {
@@ -45,7 +43,7 @@
   align-items: flex-start;
   gap: 12px;
   padding: 16px;
-  background: rgba(208, 226, 255, 0.2);
+  background: #f4f4f4;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.15s ease;
@@ -54,26 +52,26 @@
 }
 
 .taskItem:hover {
-  background: rgba(166, 200, 255, 0.3);
+  background: #e8e8e8;
   transform: translateX(4px);
-  border-color: #A6C8FF;
+  border-color: #c6c6c6;
 }
 
 .taskItem:focus-visible {
-  outline: 2px solid white;
+  outline: 2px solid #0F62FE;
   outline-offset: 2px;
 }
 
 .taskItem.completed {
-  background: rgba(36, 161, 72, 0.3);
-  border-color: rgba(36, 161, 72, 0.6);
+  background: #defbe6;
+  border-color: #24a148;
 }
 
 .taskCheckbox {
   width: 24px;
   height: 24px;
   border-radius: 4px;
-  background: rgba(237, 245, 255, 0.3);
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +79,8 @@
   font-weight: bold;
   flex-shrink: 0;
   transition: all 0.15s ease;
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  border: 2px solid #8d8d8d;
+  color: #161616;
 }
 
 .taskItem.completed .taskCheckbox {
@@ -99,12 +98,13 @@
   font-size: 1.05rem;
   margin-bottom: 4px;
   line-height: 1.5;
+  color: #161616;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .taskDescription {
   font-size: 0.95rem;
-  opacity: 0.9;
+  color: #525252;
   line-height: 1.6;
   margin-top: 8px;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -113,25 +113,26 @@
 .taskHint {
   margin-top: 12px;
   padding: 12px;
-  background: rgba(253, 209, 58, 0.25);
-  border-left: 4px solid #FDD13A;
+  background: #fff8e1;
+  border-left: 4px solid #f1c21b;
   border-radius: 4px;
   font-size: 0.9rem;
   line-height: 1.6;
-  color: #ffffff;
+  color: #161616;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .successMessage {
   margin-top: 20px;
   padding: 16px;
-  background: rgba(36, 161, 72, 0.3);
+  background: #defbe6;
   border-radius: 4px;
   display: flex;
   align-items: center;
   gap: 12px;
   font-weight: 500;
   border: 2px solid #24A148;
+  color: #161616;
   animation: slideIn 0.3s ease;
   font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -179,15 +180,15 @@
 /* Accessibility - High contrast mode support */
 @media (prefers-contrast: high) {
   .activityContainer {
-    border: 2px solid white;
+    border: 2px solid #161616;
   }
   
   .taskItem {
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid #8d8d8d;
   }
   
   .taskCheckbox {
-    border: 2px solid white;
+    border: 2px solid #161616;
   }
 }
 

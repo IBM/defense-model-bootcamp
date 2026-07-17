@@ -1,18 +1,15 @@
 ---
 id: step1
 title: Step 1 - Configure the Model Comparison
-sidebar_label: Step 1 - Configure Model Comparison
+sidebar_label: "Step 1: Configure Model Comparison"
 sidebar_position: 4
 ---
 
-import InteractiveActivity from '@site/src/components/InteractiveActivity';
+# Step 1: Configure the Model Comparison
 
+**Objective:** Set up the Model Performance Comparison run by selecting both models, downloading the evaluation dataset, uploading it, and launching the comparison.
 
-## ⚙️ Hands-On: Configure the Model Comparison Run
-
-Before you can evaluate the fine-tuned model, you need to set up the comparison. In this step, you'll navigate to the **Fine-tuning Lab**, select the two models to compare, upload the evaluation dataset, and launch the comparison run.
-
-### What Is the Evaluation Dataset?
+## What Is the Evaluation Dataset?
 
 The evaluation dataset is a CSV file containing labeled questions used to test both models side by side. It is **not** training data — the models have never seen these questions before. Each row has two columns:
 
@@ -23,7 +20,7 @@ The comparison run sends each question to both models and measures how often eac
 
 ---
 
-## 🎯 Activity 1: Open the Fine-Tuning Lab and Review the Configuration Form
+## Instructions
 
 ### Step 1: Navigate to the Fine-Tuning Lab
 
@@ -33,190 +30,74 @@ On the left side menu, click **"Fine-tuning Lab"**. The **Model Performance Comp
 
 ### Step 2: Select Model 1 — Fine-Tuned Model
 
-Click the **Model 1** dropdown (highlighted with a red box). Select **"Fine-tuned Model"** from the list. This is the model that was customized on defense domain data and whose performance you want to measure.
+Click the **Model 1** dropdown. Select **"Fine-tuned Model"** from the list. This is the model that was customized on defense domain data and whose performance you want to measure.
 
 ![Model 1 dropdown open, ready to select Fine-tuned Model](/img/lab-03/step1_2.png)
 
 ### Step 3: Select Model 2 — Base Model
 
-Click the **Granite 4 Small / Model 2** dropdown (highlighted with a red box). Select **"Base Model"** from the list. This sets up the side-by-side comparison — the fine-tuned model against the unmodified base model.
+Click the **Granite 4 Small / Model 2** dropdown. Select **"Base Model"** from the list. This sets up the side-by-side comparison — the fine-tuned model against the unmodified base model.
 
 ![Model 2 dropdown open with Base Model being selected](/img/lab-03/step1_3.png)
 
-<InteractiveActivity
-  title="Configure the Model Comparison"
-  description="Select both models for the comparison run."
-  tasks={[
-    {
-      title: "Select the Fine-Tuned Model as Model 1",
-      description: "Click the Model 1 dropdown and select 'Fine-tuned Model'. This is the model that was trained on the defense domain evaluation dataset.",
-      hint: "Model 1 is always your fine-tuned model — it appears first in the results so you can directly compare its improvement."
-    },
-    {
-      title: "Select the Base Model as Model 2",
-      description: "Click the Model 2 dropdown (labelled 'Granite 4 Small') and select 'Base Model'. This is the unmodified starting point used as the comparison baseline.",
-      hint: "The base model represents the out-of-the-box capability before any domain-specific fine-tuning was applied."
-    }
-  ]}
-/>
+**What to check:**
+- Model 1 is set to **Fine-tuned Model**
+- Model 2 is set to **Base Model**
 
 ---
 
-## 🎯 Activity 2: Obtain the Evaluation Dataset
-
 ### Step 4: Download the Sample Evaluation Dataset
 
-With both models selected, locate the **Upload Validation Dataset (CSV)** section. Click **"↓ Download sample dataset"** (highlighted with a red box) to download the pre-prepared evaluation CSV file (`fine_tuning_sample.csv`) to your local machine.
+With both models selected, locate the **Upload Validation Dataset (CSV)** section. Click **"↓ Download sample dataset"** to download the pre-prepared evaluation CSV file (`fine_tuning_sample.csv`) to your local machine.
 
 ![Configuration form with Download sample dataset link highlighted](/img/lab-03/step1_4.png)
 
 ### Step 5: Review the Evaluation Dataset Contents
 
-Open the downloaded `fine_tuning_sample.csv` file to review its contents. The file contains **13 labeled questions** across 6 defense entity categories: installations, equipment, organizations, inventory, military-groups, and events. Each row has a **Question** and the correct **Category** label. Click **Download** (highlighted with a red box) to save the file locally if you haven't already.
+Open the downloaded `fine_tuning_sample.csv` file to review its contents. The file contains **13 labeled questions** across 6 defense entity categories: installations, equipment, organizations, inventory, military-groups, and events. Each row has a **Question** and the correct **Category** label.
 
 ![fine_tuning_sample.csv open in browser showing 13 labeled questions with Question and Category columns](/img/lab-03/step1_5.png)
 
-<InteractiveActivity
-  title="Review the Evaluation Dataset"
-  description="Understand the structure and content of the CSV file used to run the comparison."
-  tasks={[
-    {
-      title: "Download the Sample Dataset",
-      description: "Click '↓ Download sample dataset' next to the Upload Validation Dataset label. Save fine_tuning_sample.csv to your Downloads folder.",
-      hint: "The file is small (under 1 KB) and will download instantly. You can also use this link to get a copy if you already closed the form."
-    },
-    {
-      title: "Inspect the CSV Structure",
-      description: "Open the downloaded CSV file. Confirm it has two columns — Question and Category — and review a few rows to understand the evaluation format.",
-      hint: "Each question maps to exactly one category. These are the ground-truth labels the system uses to score both models."
-    },
-    {
-      title: "Note the Category Distribution",
-      description: "Count how many questions belong to each category. Which categories have the most questions? Which have the fewest?",
-      hint: "Installations appears most frequently (4 questions), while events has only 1. This distribution will affect which categories the comparison can reliably measure."
-    }
-  ]}
-/>
+**What to check:**
+- The file has two columns: **Question** and **Category**
+- There are 13 rows of labeled questions
+- Installations appears most frequently (4 questions); events has only 1
 
 ---
 
-## 🎯 Activity 3: Upload the Evaluation Dataset and Run the Comparison
-
 ### Step 6: Click the Upload Area to Open the File Picker
 
-Back in the **Configure Model Comparison** form, click the upload drop zone (highlighted with a red box) labeled **"Click to upload or drag and drop — CSV file with validation data"**. This opens the file picker.
+Back in the **Configure Model Comparison** form, click the upload drop zone labeled **"Click to upload or drag and drop — CSV file with validation data"**. This opens the file picker.
 
 ![Upload drop zone highlighted, ready to receive the validation CSV](/img/lab-03/step1_6.png)
 
 ### Step 7: Select fine_tuning_sample.csv from Your Downloads
 
-In the file picker, navigate to your **Downloads** folder and select **fine_tuning_sample.csv** (913 bytes, shown highlighted in blue). Click **Open** to upload it.
+In the file picker, navigate to your **Downloads** folder and select **fine_tuning_sample.csv**. Click **Open** to upload it.
 
 ![macOS file picker open showing fine_tuning_sample.csv selected in Downloads folder](/img/lab-03/step1_7.png)
 
 ### Step 8: Confirm Validation Data Loaded and Run the Comparison
 
-After upload, the form shows a **"✓ Validation Data Loaded"** confirmation panel with the dataset summary: **13 total questions**, **6 unique categories**, and **0.9 KB** file size. The category distribution chips show how questions are spread across Installations (4), Equipment (2), Organizations (2), Inventory (2), Military-Groups (2), and Events (1). Review the summary, then click **RUN COMPARISON** (highlighted with a red box) to launch the evaluation.
+After upload, the form shows a **"✓ Validation Data Loaded"** confirmation panel with the dataset summary: **13 total questions**, **6 unique categories**, and **0.9 KB** file size. Review the summary, then click **RUN COMPARISON** to launch the evaluation.
 
 ![Validation data loaded summary with category distribution and RUN COMPARISON button highlighted](/img/lab-03/step1_8.png)
 
-<InteractiveActivity
-  title="Upload the Dataset and Launch the Comparison"
-  description="Complete the configuration and start the model comparison run."
-  tasks={[
-    {
-      title: "Upload the Validation CSV",
-      description: "Click the upload drop zone and select fine_tuning_sample.csv from your Downloads folder. Confirm the file appears with a green checkmark and the filename shown in the upload area.",
-      hint: "You can also drag and drop the file directly onto the upload area instead of using the file picker."
-    },
-    {
-      title: "Verify the Dataset Summary",
-      description: "Check that the 'Validation Data Loaded' panel shows 13 total questions across 6 unique categories. Review the category distribution chips to confirm the dataset loaded correctly.",
-      hint: "If the category count or question count looks wrong, the file may have been modified. Re-download the sample dataset and try again."
-    },
-    {
-      title: "Launch the Comparison Run",
-      description: "Click the blue 'RUN COMPARISON' button to send all 13 questions to both models and generate the performance report.",
-      hint: "The comparison may take 15–30 seconds to complete. Do not refresh the page — you will be automatically taken to the results dashboard when it finishes."
-    }
-  ]}
-/>
+**What to check:**
+- The confirmation panel shows **13 total questions** and **6 unique categories**
+- The **RUN COMPARISON** button is active (not greyed out)
 
----
+## Expected Result
 
-## 🔍 What Is the Evaluation Dataset Testing?
+The comparison run is launched. ARGUS AI transitions to the **Processing Model Comparison** screen showing a 4-step progress tracker. When all stages complete, the results dashboard loads automatically.
 
-<div style={{
-  background: '#0F62FE',
-  padding: '24px',
-  borderRadius: '4px',
-  margin: '24px 0',
-  color: 'white',
-  border: '1px solid #4589FF'
-}}>
-  <h3 style={{marginTop: 0, color: 'white'}}>🎓 Learning Moment</h3>
-  <p style={{fontSize: '1.05rem', lineHeight: '1.6'}}>
-    The evaluation dataset in this lab was carefully designed to:
-  </p>
-  <ul style={{lineHeight: '1.8', fontSize: '1.05rem'}}>
-    <li><strong>Test classification accuracy</strong>: Each question has one correct category — the models must predict it correctly to score a point</li>
-    <li><strong>Cover the same categories used in fine-tuning</strong>: Equipment, events, installations, inventory, military groups, and organizations</li>
-    <li><strong>Use held-out questions</strong>: These 13 questions were not part of the fine-tuning training data — this ensures an unbiased performance measurement</li>
-    <li><strong>Represent real defense domain queries</strong>: Questions about specific military assets, installations, and organizations typical of defense intelligence work</li>
-  </ul>
-  <p style={{marginBottom: 0, fontSize: '1.05rem', marginTop: '16px'}}>
-    In a real deployment, your evaluation dataset would be a larger, carefully curated set of questions reviewed by domain experts to ensure it fairly represents the tasks the model will perform in production.
-  </p>
-</div>
+## 📝 Note
 
----
+The evaluation dataset uses **held-out questions** — these 13 questions were not part of the fine-tuning training data. This ensures the accuracy scores reflect real performance on unseen data, not memorization.
 
-## ✅ Step 1 Complete!
+## 💡 Troubleshooting
 
-<div style={{
-  background: '#24A148',
-  padding: '20px',
-  borderRadius: '4px',
-  margin: '24px 0',
-  color: 'white',
-  border: '1px solid #198038'
-}}>
-  <h3 style={{marginTop: 0, color: 'white'}}>🎉 Excellent Progress!</h3>
-  <p style={{marginBottom: 0, fontSize: '1.05rem'}}>
-    You've successfully:
-  </p>
-  <ul style={{marginBottom: 0, paddingLeft: '20px', fontSize: '1.05rem'}}>
-    <li>Navigated to the Fine-tuning Lab and opened the Configure Model Comparison form</li>
-    <li>Selected the Fine-tuned Model and Base Model for side-by-side comparison</li>
-    <li>Downloaded and reviewed the evaluation dataset (13 questions, 6 categories)</li>
-    <li>Uploaded the validation CSV and confirmed the dataset loaded correctly</li>
-    <li>Launched the comparison run</li>
-  </ul>
-</div>
-
-### 🎯 What's Next?
-
-In **Step 2**, you'll configure additional comparison settings and review the run parameters before the results load.
-
-### 🚀 Ready to Continue?
-
-Click "Next" to move to Step 2!
-
----
-
-<div style={{
-  background: '#FFF8E1',
-  padding: '16px',
-  borderRadius: '4px',
-  borderLeft: '4px solid #FDD13A',
-  marginTop: '24px',
-  color: '#856404'
-}}>
-  <strong>⚠️ Troubleshooting Common Issues</strong>
-  <ul style={{marginBottom: 0, marginTop: '8px'}}>
-    <li><strong>Upload Failed</strong>: Check that the file is a CSV with exactly two columns named <code>Question</code> and <code>Category</code></li>
-    <li><strong>Validation Error</strong>: If any rows are flagged, ensure there are no empty cells or extra columns in the CSV</li>
-    <li><strong>Models Not Appearing</strong>: Refresh the page and re-open the Fine-tuning Lab — model availability may take a moment to load</li>
-    <li><strong>RUN COMPARISON Stays Grey</strong>: Both model dropdowns must be filled and a valid CSV must be loaded before the button becomes active</li>
-  </ul>
-</div>
+- **Upload Failed** — Check that the file is a CSV with exactly two columns named `Question` and `Category`
+- **Validation Error** — Ensure there are no empty cells or extra columns in the CSV
+- **Models Not Appearing** — Refresh the page and re-open the Fine-tuning Lab
+- **RUN COMPARISON Stays Grey** — Both model dropdowns must be filled and a valid CSV must be loaded before the button becomes active

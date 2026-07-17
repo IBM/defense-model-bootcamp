@@ -1,12 +1,15 @@
 ---
 id: step2
 title: Step 2 - Run the Model Comparison
-sidebar_label: Step 2 - Run Comparison
+sidebar_label: "Step 2: Run Comparison"
 sidebar_position: 5
 ---
 
+# Step 2: Run the Model Comparison
 
-## ⏳ Waiting: Model Comparison in Progress
+**Objective:** Wait for the comparison run to complete across both models.
+
+## Instructions
 
 After clicking **RUN COMPARISON** in Step 1, ARGUS AI begins evaluating all 13 questions against both models. The page transitions to a **Processing Model Comparison** screen — do not close or refresh the page while it runs.
 
@@ -19,123 +22,29 @@ The progress tracker shows four sequential stages:
 3. **Running Model 2 predictions** — The same questions are sent to the Base Model
 4. **Generating comparison metrics** — Accuracy scores, category breakdowns, error listings, and the performance delta are calculated
 
-The full run typically takes **15–30 seconds**. When complete, you will be automatically taken to the results dashboard.
+## Expected Result
 
----
+The full run completes in **15–30 seconds**. When all four stages finish, you are automatically taken to the results dashboard.
 
-## 🔬 What Is Happening During the Comparison Run?
+## What Is Happening During the Run?
 
-<div style={{
-  background: '#0F62FE',
-  padding: '24px',
-  borderRadius: '4px',
-  margin: '24px 0',
-  color: 'white',
-  border: '1px solid #4589FF'
-}}>
-  <h3 style={{marginTop: 0, color: 'white'}}>🎓 What the System Is Doing</h3>
-  <div style={{fontSize: '1.05rem', lineHeight: '1.8'}}>
-    <p><strong>1. Classification Inference</strong></p>
-    <p style={{marginLeft: '20px'}}>Each question from the evaluation CSV is sent to both models as a prompt. Each model returns its predicted category label (e.g., <code>equipment</code>, <code>inventory</code>, <code>installations</code>).</p>
+1. **Classification Inference** — Each question is sent to both models as a prompt. Each model returns its predicted category label (e.g., `equipment`, `inventory`, `installations`).
+2. **Ground-Truth Comparison** — The predicted category is compared against the correct label in the CSV. A match counts as correct; a mismatch is recorded as an error.
+3. **Metric Aggregation** — Results are aggregated per category and overall: accuracy, category-wise accuracy, error count, and performance delta.
+4. **Report Generation** — The dashboard (score cards, bar chart, radar, category details, key insights) is assembled from these aggregated results.
 
-    <p><strong>2. Ground-Truth Comparison</strong></p>
-    <p style={{marginLeft: '20px'}}>The predicted category is compared against the correct category label in the CSV. A match counts as correct; a mismatch is recorded as an error.</p>
+## 💡 Tip
 
-    <p><strong>3. Metric Aggregation</strong></p>
-    <p style={{marginLeft: '20px'}}>Results are aggregated per category and overall. Overall accuracy, category-wise accuracy, error count, and the performance delta between models are all calculated.</p>
+Use the wait time to think through these questions:
 
-    <p><strong>4. Report Generation</strong></p>
-    <p style={{marginLeft: '20px', marginBottom: 0}}>The dashboard you will see in Step 3 — including the score cards, bar chart, performance radar, category details, and key insights — is assembled from these aggregated results.</p>
-  </div>
-</div>
+- Will the fine-tuned model outperform the base model on all categories, or just some?
+- Which categories do you expect to show the biggest improvement after fine-tuning?
+- What accuracy threshold would matter in a real deployment — 1%? 5%? 10%?
+- If the fine-tuned model performs worse on a category, what might explain that?
 
----
+## 📝 Best Practices
 
-## 💡 Use This Time to Reflect
-
-<div style={{
-  background: '#0F62FE',
-  padding: '24px',
-  borderRadius: '4px',
-  margin: '24px 0',
-  color: 'white',
-  border: '1px solid #4589FF'
-}}>
-  <h3 style={{marginTop: 0, color: 'white'}}>🏆 While You Wait</h3>
-  <p style={{fontSize: '1.05rem'}}>
-    The comparison takes under a minute. Use the time to think through these questions:
-  </p>
-  <ol style={{fontSize: '1.05rem', lineHeight: '1.8', marginBottom: 0}}>
-    <li>What result do you expect — will the fine-tuned model outperform the base model on all categories, or just some?</li>
-    <li>Which categories do you think will show the biggest improvement after fine-tuning?</li>
-    <li>What would a meaningful improvement look like — 1%? 5%? 10%? What threshold would matter in a real deployment?</li>
-    <li>If the fine-tuned model performs worse on a category, what might explain that?</li>
-  </ol>
-</div>
-
----
-
-## 💡 Pro Tips for Evaluation Runs
-
-<div style={{
-  display: 'grid',
-  gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-  gap: '16px',
-  margin: '24px 0'
-}}>
-  <div style={{
-    background: '#D0E2FF',
-    padding: '20px',
-    borderRadius: '4px',
-    borderLeft: '4px solid #0F62FE'
-  }}>
-    <h4 style={{marginTop: 0, color: '#0353E9'}}>✅ Best Practices</h4>
-    <ul style={{marginBottom: 0, paddingLeft: '20px', color: '#161616'}}>
-      <li>Always use held-out questions the model has never seen</li>
-      <li>Include enough examples per category to get a reliable accuracy reading</li>
-      <li>Run the same evaluation dataset against multiple model versions to track improvement over time</li>
-      <li>Keep the page open until the run finishes</li>
-    </ul>
-  </div>
-
-  <div style={{
-    background: '#FFE6E6',
-    padding: '20px',
-    borderRadius: '4px',
-    borderLeft: '4px solid #DA1E28'
-  }}>
-    <h4 style={{marginTop: 0, color: '#A2191F'}}>❌ Common Mistakes</h4>
-    <ul style={{marginBottom: 0, paddingLeft: '20px', color: '#161616'}}>
-      <li>Using training data as evaluation data — this inflates scores and hides real performance</li>
-      <li>Evaluating on too few questions per category (fewer than 5 makes accuracy unreliable)</li>
-      <li>Refreshing the page mid-run — this cancels the comparison and requires restarting</li>
-      <li>Comparing different model versions across different evaluation datasets</li>
-    </ul>
-  </div>
-</div>
-
----
-
-## ✅ Step 2 Complete!
-
-<div style={{
-  background: '#24A148',
-  padding: '20px',
-  borderRadius: '4px',
-  margin: '24px 0',
-  color: 'white',
-  border: '1px solid #198038'
-}}>
-  <h3 style={{marginTop: 0, color: 'white'}}>🎉 The comparison run is underway!</h3>
-  <p style={{marginBottom: 0, fontSize: '1.05rem'}}>
-    Once all four processing stages complete, the results dashboard will load automatically. You're ready to move to Step 3 to analyze the results.
-  </p>
-</div>
-
-### 🎯 What's Next?
-
-In **Step 3**, you'll explore the full **Model Performance Comparison** dashboard — reviewing accuracy scores, category breakdowns, the performance radar, error listings, and key insights.
-
-### 🚀 Ready to Review Results?
-
-Click "Next" to move to Step 3 and analyze the comparison results!
+- Always use held-out questions the model has never seen during training
+- Include enough examples per category to get a reliable accuracy reading
+- Keep the page open until the run finishes — refreshing will cancel the comparison and require restarting
+- Run the same evaluation dataset against multiple model versions to track improvement over time
