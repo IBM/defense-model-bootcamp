@@ -17,6 +17,9 @@ title: Step 7 - Generate Schema
 2. Send the message and wait for ARGUS AI to process the request
 
 3. Observe the schema generation process
+:::warning[Please Note]
+The schema generation process can take a **few minutes**, depending on the size of the document and the number of entities identified.
+:::
 ![Put into schema](/img/lab-01/put-into-schema.png)
 
 ## Expected Result
