@@ -19,11 +19,11 @@ Iran possesses M40
 
 ## Instructions
 
-1. Enter the claim into the Fact Checker input field
+1. Enter the claim into the Fact Checker input field, or click Sample Fact #4 to auto-fill it automatically
 2. Click the **Analyze** button
 3. Observe that the IBM Defense Model returns **TRUE** — Jane's database confirms the M40 recoilless gun is listed as operated by the Iranian Army and a specific Iranian brigade. The model provides detailed equipment specifications alongside the verdict
 4. Observe that Llama 3.1 70B also returns **TRUE**
-5. Observe that GPT OSS 120B returns **UNSURE**
+5. Observe that GPT OSS 120B returns **TRUE**
 6. Expand the IBM Defense Model's Jane's API Trace and click **"Show JSON Response"** to display the underlying equipment record confirming Iranian M40 operations
 
 ![Step 4 - Iran M40 Possession](/img/lab-02/8.png)
@@ -34,7 +34,7 @@ Iran possesses M40
 |-------|---------|
 | **IBM Defense Model** | TRUE |
 | **Llama 3.1 70B** | TRUE |
-| **GPT OSS 120B** | UNSURE |
+| **GPT OSS 120B** | TRUE |
 
 ## Key Observations
 
@@ -55,10 +55,10 @@ Iran possesses M40
 - No traceability to authoritative sources
 
 ### GPT OSS 120B
-- Returns **UNSURE** — lacks confidence in the claim
-- Cannot verify the equipment possession
-- No access to defense intelligence databases
-- **Hedges even when definitive data exists**
+- Returns **TRUE** based on training data
+- Correct verdict but no supporting evidence
+- Cannot provide equipment specifications or unit assignments
+- No traceability to authoritative sources
 
 ## Outcome
 
@@ -66,4 +66,4 @@ IBM Defense Model returns **TRUE** with Jane's equipment record detail, confirmi
 
 ---
 
-**Next Step:** Continue to [Step 5: Equipment Depth](./step-05-equipment-depth.md) to see how the IBM Defense Model handles large-scale equipment installations.
+**Next Step:** Continue to [Step 5: Inventory Precision](./step-05-inventory-precision.md) to test how models handle precise equipment quantities.

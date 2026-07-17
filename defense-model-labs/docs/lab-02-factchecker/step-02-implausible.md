@@ -19,7 +19,7 @@ The F-35 Lightning has been flown on Mars.
 
 ## Instructions
 
-1. Enter the claim into the Fact Checker input field
+1. Enter the claim into the Fact Checker input field, or click Sample Fact #2 to auto-fill it automatically
 2. Click the **Analyze** button
 3. Observe that the IBM Defense Model returns **FALSE** — Jane's contains no record of F-35 operations on Mars, and the claim is operationally implausible
 4. Note the Jane's API trace shows a query was made and returned no supporting records

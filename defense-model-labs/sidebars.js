@@ -186,28 +186,18 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'lab-02-factchecker/step-05-equipment-depth',
-          label: 'Step 5: Equipment Depth',
+          id: 'lab-02-factchecker/step-05-inventory-precision',
+          label: 'Step 5: Inventory Precision',
         },
         {
           type: 'doc',
-          id: 'lab-02-factchecker/step-06-inventory-precision',
-          label: 'Step 6: Inventory Precision',
+          id: 'lab-02-factchecker/step-06-oob-integrity',
+          label: 'Step 6: Order of Battle Integrity',
         },
         {
           type: 'doc',
-          id: 'lab-02-factchecker/step-07-supply-chain',
-          label: 'Step 7: Supply Chain Verification',
-        },
-        {
-          type: 'doc',
-          id: 'lab-02-factchecker/step-08-oob-integrity',
-          label: 'Step 8: Order of Battle Integrity',
-        },
-        {
-          type: 'doc',
-          id: 'lab-02-factchecker/step-09-military-group',
-          label: 'Step 9: Military Group Verification',
+          id: 'lab-02-factchecker/step-07-military-group',
+          label: 'Step 7: Military Group Verification',
         },
         {
           type: 'doc',

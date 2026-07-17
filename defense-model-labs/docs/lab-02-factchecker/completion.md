@@ -7,7 +7,7 @@ title: Lab Completion
 
 ## Congratulations!
 
-You have successfully completed Lab 2: Defense Intelligence Information Checker. Through nine comprehensive scenarios, you've experienced firsthand how the IBM Defense Model leverages Jane's Intelligence to provide reliable, traceable, and actionable defense intelligence verification.
+You have successfully completed Lab 2: Defense Intelligence Information Checker. Through seven comprehensive scenarios, you've experienced firsthand how the IBM Defense Model leverages Jane's Intelligence to provide reliable, traceable, and actionable defense intelligence verification.
 
 ## What You Accomplished
 
@@ -17,11 +17,9 @@ You have successfully completed Lab 2: Defense Intelligence Information Checker.
 2. ✅ **Implausible Claim** - Detected operationally impossible scenarios
 3. ✅ **Operational Status** - Verified Murted Air Base status with three-way model disagreement
 4. ✅ **Equipment Identification** - Confirmed Iran M40 possession with detailed specifications
-5. ✅ **Equipment Depth** - Analyzed 602 Tor-M1 installation records in Iran
-6. ✅ **Inventory Precision** - Exposed Llama 3.1 70B's inability to verify precise quantities
-7. ✅ **Supply Chain Verification** - Revealed hallucination through quantity variation testing
-8. ✅ **Order of Battle Integrity** - Detected planted foreign units in Russian OOB
-9. ✅ **Military Group Verification** - Confirmed 52nd ADA Brigade's true U.S. Army affiliation
+5. ✅ **Inventory Precision** - Exposed Llama 3.1 70B's inability to verify precise quantities
+6. ✅ **Order of Battle Integrity** - Detected planted foreign units in Russian OOB
+7. ✅ **Military Group Verification** - Confirmed 52nd ADA Brigade's true U.S. Army affiliation
 
 ## Key Insights Gained
 
@@ -54,15 +52,14 @@ You have successfully completed Lab 2: Defense Intelligence Information Checker.
 ### Competitor Model Limitations
 
 **Llama 3.1 70B Critical Failures**
-- ❌ Cannot verify precise equipment quantities (Step 6)
-- ❌ Contradictory verdicts on quantity variations (Step 7)
-- ❌ Inconsistent order of battle verification (Step 8)
+- ❌ Cannot verify precise equipment quantities (Step 5)
+- ❌ Inconsistent order of battle verification (Step 6)
 - ❌ No source grounding or traceability
 - ❌ **Unsuitable for defense intelligence verification**
 
 **GPT OSS 120B Critical Failures**
-- ❌ Confirmed U.S. unit as Russian (Step 8)
-- ❌ Contradicted itself across related claims (Steps 8 & 9)
+- ❌ Confirmed U.S. unit as Russian (Step 6)
+- ❌ Contradicted itself across related claims (Steps 6 & 7)
 - ❌ Hedges when definitive answers exist (Step 3)
 - ❌ No Jane's Intelligence integration
 - ❌ **Dangerous for intelligence integrity verification**

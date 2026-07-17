@@ -43,7 +43,7 @@ The IBM Defense Model processes each factual claim through a structured multi-st
 
 ### Lab Steps Overview
 
-This lab consists of 9 hands-on scenarios plus setup:
+This lab consists of 7 hands-on scenarios plus setup:
 
 1. **[Lab Setup](./lab-setup.md)** - Access the Fact Checker interface
 2. **[Prompt Management](./prompt-management.md)** - Understanding system prompts
@@ -51,11 +51,9 @@ This lab consists of 9 hands-on scenarios plus setup:
 4. **[Step 2: Implausible Claim](./step-02-implausible.md)** - Detect operationally impossible claims
 5. **[Step 3: Operational Status](./step-03-operational-status.md)** - Verify Murted Air Base status
 6. **[Step 4: Equipment Identification](./step-04-equipment-id.md)** - Confirm Iran M40 possession
-7. **[Step 5: Equipment Depth](./step-05-equipment-depth.md)** - Analyze Tor-M1 installations in Iran
-8. **[Step 6: Inventory Precision](./step-06-inventory-precision.md)** - Verify Pantsir-S1 quantities
-9. **[Step 7: Supply Chain Verification](./step-07-supply-chain.md)** - Test Mi-17 transfer claims
-10. **[Step 8: Order of Battle Integrity](./step-08-oob-integrity.md)** - Detect planted foreign units
-11. **[Step 9: Military Group Verification](./step-09-military-group.md)** - Confirm 52nd ADA Brigade affiliation
+7. **[Step 5: Inventory Precision](./step-05-inventory-precision.md)** - Verify Pantsir-S1 quantities
+8. **[Step 6: Order of Battle Integrity](./step-06-oob-integrity.md)** - Detect planted foreign units
+9. **[Step 7: Military Group Verification](./step-07-military-group.md)** - Confirm 52nd ADA Brigade affiliation
 
 ### Demo Learning Outcomes
 

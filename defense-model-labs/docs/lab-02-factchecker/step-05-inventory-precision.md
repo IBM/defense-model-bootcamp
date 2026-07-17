@@ -1,9 +1,9 @@
 ---
-sidebar_position: 9
-title: 'Step 6: Inventory Precision'
+sidebar_position: 8
+title: 'Step 5: Inventory Precision'
 ---
 
-# Step 6: Inventory Precision — Pantsir-S1 in Venezuela
+# Step 5: Inventory Precision — Pantsir-S1 in Venezuela
 
 **Scenario:** IBM Defense Model catches incorrect quantities; Llama 3.1 70B proves unreliable on precise numbers
 
@@ -21,7 +21,7 @@ Test how models handle precise equipment inventory quantities and demonstrate th
 
 ### Instructions
 
-1. Enter the claim into the Fact Checker input field
+1. Enter the claim into the Fact Checker input field, or click Sample Fact #5a to auto-fill it automatically
 2. Click the **Analyze** button
 3. Observe that the IBM Defense Model returns **TRUE** — Jane's database lists six Pantsir-S1 systems ordered, delivered, and in service with the Venezuelan Bolivarian Army, matching the claim exactly
 4. Observe that Llama 3.1 70B also returns **TRUE**
@@ -100,4 +100,4 @@ IBM Defense Model correctly returns **FALSE**, citing Jane's record of only six 
 
 ---
 
-**Next Step:** Continue to [Step 7: Supply Chain Verification](./step-07-supply-chain.md) to test defense procurement claims.
+**Next Step:** Continue to [Step 6: Order of Battle Integrity](./step-06-oob-integrity.md) to test detection of planted foreign units.

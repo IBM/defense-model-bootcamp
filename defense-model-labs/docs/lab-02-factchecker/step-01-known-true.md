@@ -19,7 +19,7 @@ The F-35 Lightning II is a fifth-generation multirole fighter aircraft.
 
 ## Instructions
 
-1. Type the claim into the Fact Checker input field
+1. Type the claim into the Fact Checker input field, **or** click **Sample Fact #1** to auto-fill it automatically
 2. Click the **Analyze** button (labeled **A** in the screenshot below)
 3. Observe that all three models return a **TRUE** verdict
 4. Expand the IBM Defense Model result to show the **Jane's API Trace** (labeled **B**)

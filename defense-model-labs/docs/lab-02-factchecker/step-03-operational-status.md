@@ -19,10 +19,10 @@ Murted Air Base is Active.
 
 ## Instructions
 
-1. Enter the claim into the Fact Checker input field
+1. Enter the claim into the Fact Checker input field, or click Sample Fact #3 to auto-fill it automatically
 2. Click the **Analyze** button
 3. Observe that the IBM Defense Model returns **TRUE** — Jane's database lists Murted Air Base with an installation status of "Active," directly confirming the claim
-4. Observe that Llama 3.1 70B returns **FALSE**, incorrectly contradicting the Jane's record
+4. Observe that Llama 3.1 70B returns **TRUE**
 5. Observe that GPT OSS 120B returns **UNSURE**, hedging rather than committing to either answer
 6. Expand the Jane's API Trace and click **"Show JSON Response"** to show the installations record confirming "Active" status
 
@@ -33,7 +33,7 @@ Murted Air Base is Active.
 | Model | Verdict |
 |-------|---------|
 | **IBM Defense Model** | TRUE |
-| **Llama 3.1 70B** | FALSE |
+| **Llama 3.1 70B** | TRUE |
 | **GPT OSS 120B** | UNSURE |
 
 ## Key Observations
@@ -45,10 +45,10 @@ Murted Air Base is Active.
 - Verdict is directly traceable to authoritative source data
 
 ### Llama 3.1 70B
-- Returns **FALSE** — directly contradicting the Jane's record
-- Operating from potentially outdated training data
-- No ability to verify against current intelligence sources
-- **Unreliable for operational status verification**
+- Returns **TRUE** based on training data
+- Correct verdict but no supporting evidence
+- Cannot provide operational status
+- No traceability to authoritative sources
 
 ### GPT OSS 120B
 - Returns **UNSURE** — hedging on the claim

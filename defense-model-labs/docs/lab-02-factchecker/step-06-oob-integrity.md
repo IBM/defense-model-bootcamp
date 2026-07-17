@@ -1,9 +1,9 @@
 ---
-sidebar_position: 11
-title: 'Step 8: Order of Battle Integrity'
+sidebar_position: 9
+title: 'Step 6: Order of Battle Integrity'
 ---
 
-# Step 8: Order of Battle Integrity Check
+# Step 6: Order of Battle Integrity Check
 
 **Scenario:** IBM Defense Model flags a planted non-Russian unit — GPT and Llama return inconsistent results
 
@@ -18,12 +18,12 @@ This compound claim contains a deliberate anomaly: the **52nd Air Defense Artill
 ## The Claim
 
 ```
-Russian OOB — 54th Motor Rifle Regiment, 57th Motor Rifle Regiment, 10th Tank Regiment, 27th Artillery Regiment and 52nd Air Defense Artillery Brigade.
+Russian OOB - 54th Motor Rifle Regiment, 57th Motor Rifle Regiment, 10th Tank Regiment, 27th Artillery Regiment and 52nd Air Defense Artillery Brigade.
 ```
 
 ## Instructions
 
-1. Enter the full compound claim and click **Analyze**
+1. Enter the full compound claim, or click Sample Fact #6 to auto-fill it automatically and click **Analyze**
 2. The system will decompose it into five individual atomic facts, one per unit
 3. Observe the IBM Defense Model results: it returns **TRUE** for Russian units found in Jane's order of battle records. It returns **UNSURE** for the 52nd Air Defense Artillery Brigade — correctly declining to confirm it as a Russian unit because Jane's returns no Russian record for that brigade
 4. Observe that GPT OSS 120B returns **TRUE** for the 52nd Air Defense Artillery Brigade — incorrectly confirming a U.S. Army unit as part of the Russian order of battle. This is a critical hallucination with operational consequences
@@ -86,4 +86,4 @@ IBM Defense Model correctly hedges on the 52nd ADA Brigade (a U.S. Army unit), r
 
 ---
 
-**Next Step:** Continue to [Step 9: Military Group Verification](./step-09-military-group.md) to confirm the true affiliation of the 52nd ADA Brigade.
+**Next Step:** Continue to [Step 7: Military Group Verification](./step-07-military-group.md) to confirm the true affiliation of the 52nd ADA Brigade.
