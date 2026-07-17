@@ -30,7 +30,7 @@ The **New Chat** panel is where users can start new conversations, select analys
 
 The Modes include:
 
-- **Document Enrichment Mode**: Enriches entities with authoritative intelligence
+- **Document Enrichment Mode**: Enriches extracted entities with additional context, including Janes metadata (e.g., equipment specifications)
 - **Standard Mode**: Standard document analysis and Q&A
 - **Deep Research Mode**: Conducts in-depth research on specific topics
 - **COA Generator Mode**: Generates COAs from document content
@@ -137,6 +137,44 @@ This tab supports ARGUS AI's broader mission by:
 
 ## Tab: Factchecker
 
+The **Factchecker** tab is the fine-tuning evaluation interface where users can benchmark the IBM Defense Model against a base model using a structured evaluation dataset.
+
+**Key features:**
+- **Model Performance Comparison**: Side-by-side accuracy comparison between the fine-tuned Defense Model and a base model
+- **Evaluation Dataset Upload**: Upload a labeled dataset to drive the benchmark run
+- **Results Dashboard**: Explore accuracy scores, category breakdowns, and error listings after the comparison completes
+
+This tab supports ARGUS AI's broader mission by:
+- Demonstrating the measurable performance gains achieved through domain-specific fine-tuning
+- Enabling analysts to validate model improvements before deploying to operational workflows
+- Providing transparency into how well the Defense Model handles defense and intelligence-specific tasks
+- Supporting responsible AI adoption by grounding model selection in empirical evaluation data
+
+![ARGUS AI Factchecker Tab](/img/argus-ai/ArgusAI_Factchecker.png)
+
+
 ---
 
 ## Tab: Business Intelligence
+
+The **Business Intelligence** tab demonstrates how the IBM Defense Model automates metadata enrichment for collections of defense-related documents, converting unstructured data into structured, searchable, and actionable formats that significantly improve information retrieval, intelligence analysis, and Q&A workflows.
+
+**Integrated Products:**
+- **IBM Defense Model**: Provides domain-specific AI capabilities for defense data analysis and entity extraction
+- **IBM watsonx.data — Unstructured Data Curation (UDC)**: Catalogs and classifies unstructured defense documents with enriched metadata
+- **IBM watsonx.data — Unstructured Data Integration (UDI)**: Ingests and pipelines unstructured data into structured, queryable formats
+
+**Key features:**
+- **Operational Tempo Analysis**: Analyze operations conducted by month to identify activity patterns
+- **Operations with Location, Branch & Mission Outcome**: Retrieve operations with coordinates and outcomes for spatial and mission analysis
+- **Equipment Issues Ranked**: Aggregate and rank equipment issues across the document collection
+- **Equipment Performance Rating**: Identify best-performing equipment systems from unstructured reports
+
+This tab supports ARGUS AI's broader mission by:
+- Reducing manual effort required for tagging, categorization, and dissemination of defense data
+- Enabling operator-driven pipelines for document ingestion and analysis
+- Extracting and structuring key entities from unstructured text at scale
+- Improving information retrieval and enhancing the quality and relevance of AI responses
+- Unlocking value from large volumes of unstructured defense data through AI-driven metadata enrichment
+
+![ARGUS AI Business Intelligence Tab](/img/argus-ai/ArgusAI_BusinessIntelligence.png)

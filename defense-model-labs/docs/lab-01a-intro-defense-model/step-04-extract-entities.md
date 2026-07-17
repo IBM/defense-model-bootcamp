@@ -15,6 +15,10 @@ title: Step 4 - Extract Entities
    ```
 2. Send the message and wait for ARGUS AI to process the request
 3. Observe the entity extraction process
+
+:::warning[Please Note]
+The entity extraction process can take a **few minutes**, depending on the size of the document and the number of entities identified.
+:::
 ![Look up entities process](/img/lab-01/look-up-entities-process.png)
 
 ## Expected Result
