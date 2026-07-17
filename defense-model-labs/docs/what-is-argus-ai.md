@@ -135,9 +135,23 @@ This tab supports ARGUS AI's broader mission by:
 
 ---
 
-## Tab: Factchecker
+## Tab: Fact Checker
 
-The **Factchecker** tab is the fine-tuning evaluation interface where users can benchmark the IBM Defense Model against a base model using a structured evaluation dataset.
+The **Fact Checker** tab is a guided demonstration tool that leverages the IBM Defense Model to fact-check defense intelligence claims against authoritative Janes intelligence databases. It evaluates user-provided text or PDF documents by cross-referencing identified assertions — including orders of battle, military equipment inventories, and defense procurement data — and delivers traceable TRUE / FALSE / UNSURE verdicts grounded in retrieved source records.
+
+This tab supports ARGUS AI's broader mission by:
+- Demonstrating how Janes API retrieval provides traceable, citable evidence for every verdict
+- Showing how IBM Defense Model uses tool calling to trusted Janes intelligence sources to fact-check defense intelligence entities
+- Exposing cross-model inconsistencies that reveal the unreliability of ungrounded models on niche defense topics
+- Highlighting scenarios where IBM Defense Model identifies operationally significant nuances (e.g., equipment received vs. operational; planted foreign units in an order of battle)
+
+![ARGUS AI Fact Checker Tab](/img/argus-ai/ArgusAI_Factchecker.png)
+
+---
+
+## Tab: Fine-tuning Lab
+
+The **Fine-tuning Lab** tab is the fine-tuning evaluation interface where users can benchmark the IBM Defense Model against a base model using a structured evaluation dataset.
 
 **Key features:**
 - **Model Performance Comparison**: Side-by-side accuracy comparison between the fine-tuned Defense Model and a base model
@@ -150,7 +164,7 @@ This tab supports ARGUS AI's broader mission by:
 - Providing transparency into how well the Defense Model handles defense and intelligence-specific tasks
 - Supporting responsible AI adoption by grounding model selection in empirical evaluation data
 
-![ARGUS AI Factchecker Tab](/img/argus-ai/ArgusAI_Factchecker.png)
+![ARGUS AI Fine-tuning Tab](/img/argus-ai/ArgusAI_FinetuningLab.png)
 
 
 ---
