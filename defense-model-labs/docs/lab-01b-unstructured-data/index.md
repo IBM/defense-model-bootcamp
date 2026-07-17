@@ -21,7 +21,6 @@ This lab demonstrates one of the real-world implementations of a Defense Model t
 
 This comprehensive lab includes:
 
-- **[Introduction](./introduction)** - Lab objectives and learning outcomes
 - **[Introduction](./introduction)** - Why automate unstructured data ingestion
 - **[Lab Setup](./setup)** - Environment configuration and access
 - **[Step 1: Operational Tempo by Month](./step1)** - Analyze operations conducted each month

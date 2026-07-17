@@ -34,7 +34,7 @@ const LabList = [
     tools: 'IBM Defense Model',
     description:
       'Learn to fine-tune the IBM Defense Model for specific use cases and optimize performance.',
-    to: '/docs/lab-03-fine-tuning/',
+    to: '/docs/lab-03-fine-tuning/overview',
   },
 ];
 

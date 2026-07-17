@@ -104,7 +104,7 @@ const sidebars = {
         {
           type: 'doc',
           id: 'lab-01b-unstructured-data/index',
-          label: 'Lab Overview',
+          label: 'Overview',
         },
         {
           type: 'doc',
@@ -212,11 +212,6 @@ const sidebars = {
       collapsible: true,
       collapsed: false,
       items: [
-        {
-          type: 'doc',
-          id: 'lab-03-fine-tuning/index',
-          label: 'Lab Overview',
-        },
         {
           type: 'doc',
           id: 'lab-03-fine-tuning/overview',
