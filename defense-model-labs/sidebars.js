@@ -108,11 +108,6 @@ const sidebars = {
         },
         {
           type: 'doc',
-          id: 'lab-01b-unstructured-data/overview',
-          label: 'Overview',
-        },
-        {
-          type: 'doc',
           id: 'lab-01b-unstructured-data/introduction',
           label: 'Introduction',
         },
