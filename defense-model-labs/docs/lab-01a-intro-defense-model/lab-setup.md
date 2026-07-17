@@ -15,7 +15,7 @@ For this lab, you will need:
 ## Before You Begin
 
 1. Ensure you have the [`AAR_OperationGhostFalcon.docx`](/AAR_OperationGhostFalcon.docx) file downloaded and accessible
-2. Open your web browser and navigate to the ARGUS AI interface [http://169.61.68.18:32368](http://169.61.68.18:32368)
+2. Open your web browser and navigate to the ARGUS AI interface [http://169.47.36.48:32044/](http://169.47.36.48:32044/)
 3. Log in using the credentials provided by your instructor
    1. username: <code>admin</code> <button onClick={() => navigator.clipboard.writeText('admin')} style={{marginLeft: '8px', padding: '4px 8px', fontSize: '10px', cursor: 'pointer', borderRadius: '4px', border: '1px solid #ccc', backgroundColor: '#f0f0f0', color: '#000000'}}>📋 Copy username</button>
    2. password: <code>IBMDem0s!</code> <button onClick={() => navigator.clipboard.writeText('IBMDem0s!')} style={{marginLeft: '8px', padding: '4px 8px', fontSize: '10px', cursor: 'pointer', borderRadius: '4px', border: '1px solid #ccc', backgroundColor: '#f0f0f0', color: '#000000'}}>📋 Copy password</button>
