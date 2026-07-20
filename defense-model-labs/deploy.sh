@@ -51,7 +51,7 @@ fi
 
 # Add remote if it doesn't exist
 if ! git remote | grep -q origin; then
-    git remote add origin https://github.ibm.com/dallas-gsc-gov/defense-model-bootcamp.git
+    git remote add origin https://github.com/IBM/defense-model-bootcamp.git
 fi
 
 # Add all files
@@ -67,7 +67,7 @@ git push -f origin gh-pages
 cd ..
 
 echo "✅ Deployment complete!"
-echo "🌐 Your site should be available at: https://pages.github.ibm.com/dallas-gsc-gov/defense-model-bootcamp/"
+echo "🌐 Your site should be available at: https://ibm.github.io/defense-model-bootcamp/"
 echo ""
 echo "📝 Next steps:"
 echo "   1. Go to your repository settings on GitHub"
