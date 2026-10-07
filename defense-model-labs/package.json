@@ -28,6 +28,16 @@
     "@docusaurus/module-type-aliases": "3.10.1",
     "@docusaurus/types": "3.10.1"
   },
+  "overrides": {
+    "@docusaurus/core": "3.10.1",
+    "braces": "3.0.3",
+    "chokidar": "^4.0.0",
+    "serialize-javascript": "^7.0.5",
+    "tinypool": "^2.1.2",
+    "uuid": "^11.1.1",
+    "postcss-selector-parser": "^7.1.6",
+    "argparse": "^2.0.1"
+  },
   "browserslist": {
     "production": [
       ">0.5%",
